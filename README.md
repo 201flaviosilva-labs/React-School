@@ -1,6 +1,6 @@
 # React School
 
----
+React Tutorial
 
 ---
 
