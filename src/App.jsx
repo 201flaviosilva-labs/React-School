@@ -1,13 +1,18 @@
 import React from 'react';
-import DateCalc from "./Components/DateCalc";
-import MagicWords from "./Components/MagicWords";
+import { BrowserRouter } from "react-router-dom";
+
+import Header from "./Components/Header";
+import Main from "./Components/Main";
+import Footer from "./Components/Footer";
 
 export default function App() {
   return (
     <>
-      <DateCalc />
-      <br />
-      <MagicWords />
+      <BrowserRouter>
+        <Header />
+        <Main />
+        <Footer />
+      </BrowserRouter>
     </>
   );
 }
