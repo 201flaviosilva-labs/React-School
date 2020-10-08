@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
+import "./style.min.css";
+
 export default function DateCalc() {
 	const dateNow = new Date();
 	const getMonth = dateNow.getUTCMonth() + 1;
@@ -8,6 +10,7 @@ export default function DateCalc() {
 	const [date, setDate] = useState(
 		`${dateNow.getFullYear()}-${getMonth >= 10 ? getMonth : "0" + getMonth}-${dateNow.getDate() >= 10 ? dateNow.getDate() : "0" + dateNow.getDate()}`
 	);
+
 	const [milliseconds, setMilliseconds] = useState();
 	const [seconds, setSeconds] = useState();
 	const [minutes, setMinutes] = useState();
@@ -43,11 +46,8 @@ export default function DateCalc() {
 		setWeeksDay(weekDays[dataChoise.getDay()]);
 	}
 
-	const styles = {
-		border: "1px solid black"
-	}
 	return (
-		<div style={styles}>
+		<div className="DateCalcContainer">
 			<input
 				type="date"
 				placeholder="Date"

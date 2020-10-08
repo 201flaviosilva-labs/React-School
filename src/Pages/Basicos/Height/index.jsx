@@ -12,7 +12,7 @@ export default function Height() {
 	};
 	return (
 		<>
-			<label htmlFor={"getHeightInput"}>Input you height
+			<label htmlFor={"getHeightInput"}>Escreve a tua altura
 				<input
 					id="getHeightInput"
 					type="text"
@@ -22,8 +22,7 @@ export default function Height() {
 					style={getHeightInputStyle} />
 				cm.
 			</label>
-			<br />
-			<button onClick={() => alert("You height is: " + heightInput + " cm.")}> Calculate </button>
+			<button onClick={() => alert("You height is: " + heightInput + " cm.")}> Calcular </button>
 		</>
 	);
 }

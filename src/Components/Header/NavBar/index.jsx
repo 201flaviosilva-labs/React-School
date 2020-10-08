@@ -6,9 +6,6 @@ export default function NavBar() {
 		<nav>
 			<ul>
 				<li><Link to="/">Home</Link></li>
-				<li><Link to="/form">Form</Link></li>
-				<li><Link to="/todo">To Do List</Link></li>
-				<li><Link to="/filmes">Filmes</Link></li>
 				<li><Link to="/basicos">Basicos</Link></li>
 			</ul>
 		</nav>
