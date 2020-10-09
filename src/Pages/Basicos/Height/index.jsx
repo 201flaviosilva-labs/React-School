@@ -1,28 +1,23 @@
 import React, { useState } from 'react';
 
+import "./style.min.css";
+
 export default function Height() {
-	const [heightInput, setHeightInput] = useState("");
-	const getHeightInputStyle = {
-		color: "red",
-		padding: "4px 10px",
-		margin: "0 10px",
-		border: "1px solid black",
-		borderRadius: "10px",
-		outline: "none",
-	};
+	const [n, setN] = useState("");
 	return (
-		<>
-			<label htmlFor={"getHeightInput"}>Escreve a tua altura
-				<input
-					id="getHeightInput"
-					type="text"
-					name="heightInput"
-					value={heightInput}
-					onChange={(e) => setHeightInput(e.target.value)}
-					style={getHeightInputStyle} />
-				cm.
-			</label>
-			<button onClick={() => alert("You height is: " + heightInput + " cm.")}> Calcular </button>
-		</>
+		<div className="ContainerBasicCenter">
+			<h2>Height</h2>
+			<div className="HeightContainer">
+				<label htmlFor={"getHeightInput"}>Escreve a tua altura
+					<input
+						id="getHeightInput"
+						type="number"
+						name="heightInput"
+						value={n}
+						onChange={(e) => setN(e.target.value)} /> cm.
+				</label>
+				<button onClick={() => (n && !isNaN(Number(n))) ? alert(`Tua altura é: ${Number(n) / 100} metros.`) : alert("Eror 404!!")}> Calcular </button>
+			</div>
+		</div>
 	);
 }

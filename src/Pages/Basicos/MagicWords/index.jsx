@@ -6,7 +6,7 @@ export default function MagicWords() {
 		border: "1px solid black"
 	}
 	return (
-		<div style={styles}>
+		<div style={styles} className="ContainerBasicCenter">
 			<input
 				style={{ width: "90%" }}
 				type="text"

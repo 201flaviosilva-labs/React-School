@@ -4,11 +4,15 @@ import "./style.min.css";
 
 export default function DateCalc() {
 	const dateNow = new Date();
-	const getMonth = dateNow.getUTCMonth() + 1;
+	const getMonth = dateNow.getMonth() + 1 >= 10 ? dateNow.getMonth() + 1 : "0" + dateNow.getMonth() + 1;
+	const getDay = dateNow.getDate() >= 10 ? dateNow.getDate() : "0" + dateNow.getDate();
+	const getHora = dateNow.getHours() >= 10 ? dateNow.getHours() : "0" + dateNow.getHours();
+	const getMin = dateNow.getMinutes() >= 10 ? dateNow.getMinutes() : "0" + dateNow.getMinutes();
+
 	const weekDays = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"];
 
 	const [date, setDate] = useState(
-		`${dateNow.getFullYear()}-${getMonth >= 10 ? getMonth : "0" + getMonth}-${dateNow.getDate() >= 10 ? dateNow.getDate() : "0" + dateNow.getDate()}`
+		`${dateNow.getFullYear()}-${getMonth}-${getDay}T${getHora}:${getMin}`
 	);
 
 	const [milliseconds, setMilliseconds] = useState();
@@ -18,54 +22,49 @@ export default function DateCalc() {
 	const [days, setDays] = useState();
 	const [weeksDay, setWeeksDay] = useState();
 	const [weeks, setWeeks] = useState();
-	const [years, setYears] = useState();
 	const [months, setMonths] = useState();
+	const [years, setYears] = useState();
 
-	useEffect(() => calc(), [date]);
-
-	function calc() {
-		const dataChoise = new Date(date);
-
-		const millisecondsCalc = dateNow - dataChoise;
-		const secondsCalc = Math.floor(millisecondsCalc / 1000);
-		const minutesCalc = Math.floor(secondsCalc / 60);
-		const hoursCalc = Math.floor(minutesCalc / 60);
-		const daysCalc = Math.floor(hoursCalc / 24);
-		const weeksCalc = Math.floor(daysCalc / 7);
-		const yearsCalc = dateNow.getUTCFullYear() - dataChoise.getUTCFullYear();
-		const monthsCalc = yearsCalc * 12 + dateNow.getUTCMonth() - dataChoise.getUTCMonth();
-
-		setMilliseconds(millisecondsCalc);
-		setSeconds(secondsCalc);
-		setMinutes(minutesCalc);
-		setHours(hoursCalc);
-		setDays(daysCalc);
-		setWeeks(weeksCalc);
-		setMonths(monthsCalc);
-		setYears(yearsCalc);
+	let dataChoise = new Date(date);
+	useEffect(() => {
+		dataChoise = new Date(date);
+		setMilliseconds(Math.floor(dateNow - dataChoise));
+		setYears(dateNow.getFullYear() - dataChoise.getFullYear());
 		setWeeksDay(weekDays[dataChoise.getDay()]);
-	}
+	}, [date]);
+
+	useEffect(() => setSeconds(Math.floor(milliseconds / 1000)), [milliseconds]);
+	useEffect(() => setMinutes(Math.floor(seconds / 60)), [seconds]);
+	useEffect(() => setHours(Math.floor(minutes / 60)), [minutes]);
+	useEffect(() => setDays(Math.floor(hours / 24)), [hours]);
+	useEffect(() => setWeeks(Math.floor(days / 7)), [days]);
+	useEffect(() => setMonths(years * 12 + dateNow.getMonth() - dataChoise.getMonth()), [years]);
 
 	return (
-		<div className="DateCalcContainer">
-			<input
-				type="date"
-				placeholder="Date"
-				title="Date"
-				value={date}
-				onChange={e => setDate(e.target.value)}
-			/>
+		<div className="ContainerBasicCenter">
+			<h2>Data</h2>
+			<div className="DateCalcContainer">
+				<input
+					type="datetime-local"
+					placeholder="Date"
+					title="Date"
+					value={date}
+					onChange={e => setDate(e.target.value)}
+				/>
 
-			<p>Data: {date.split("-").reverse().join("/")}</p>
-			<p>Milisegundos: {milliseconds}</p>
-			<p>Segundos: {seconds}</p>
-			<p>Minutos: {minutes}</p>
-			<p>Horas: {hours}</p>
-			<p>Dias: {days}</p>
-			<p>Dia da Semana: {weeksDay}</p>
-			<p>Semanas: {weeks}</p>
-			<p>Mêses: {months}</p>
-			<p>Anos: {years}</p>
+				<div>
+					<p><span>Data</span>: <span>{date.replace("T", " ")}</span></p>
+					<p><span>Milisegundos</span>: <span>{milliseconds}</span></p>
+					<p><span>Segundos</span>: <span>{seconds}</span></p>
+					<p><span>Minutos</span>: <span>{minutes}</span></p>
+					<p><span>Horas</span>: <span>{hours}</span></p>
+					<p><span>Dias</span>: <span>{days}</span></p>
+					<p><span>Dia da Semana</span>: <span>{weeksDay}</span></p>
+					<p><span>Semanas</span>: <span>{weeks}</span></p>
+					<p><span>Meses</span>: <span>{months}</span></p>
+					<p><span>Anos</span>: <span>{years}</span></p>
+				</div>
+			</div>
 		</div>
 	)
 }

@@ -6,7 +6,7 @@ export default function Todo() {
 	const [name, setName] = useState("");
 
 	return (
-		<div className="TodoContainder">
+		<div className="TodoContainder ContainerBasicCenter">
 			<input type="text" placeholder="Nome" value={name} onChange={(e) => setName(e.target.value)} />
 			<button onClick={() => setList(list.concat(name))}>Add</button>
 			<ul>

@@ -1,1 +1,1 @@
-.DateCalcContainer{background:red}.DateCalcContainer input{width:100%}
+.DateCalcContainer{background:darkblue;border:1px solid black;padding:10px}.DateCalcContainer input{width:100%;margin-bottom:10px;font-size:16px;padding:4px;border:1px solid black;border-radius:6px;box-shadow:0 0 10px lightblue}.DateCalcContainer div{width:100%}.DateCalcContainer div p{width:100%;font-size:20px;color:white}.DateCalcContainer div p span:nth-child(1){color:white;font-weight:bold}.DateCalcContainer div p span:nth-child(2){width:100%;color:black;background:gold}
