@@ -10,8 +10,8 @@ export default function Todo() {
 			<input type="text" placeholder="Nome" value={name} onChange={(e) => setName(e.target.value)} />
 			<button onClick={() => setList(list.concat(name))}>Add</button>
 			<ul>
-				{list.map(l =>
-					<li>
+				{list.map((l, index) =>
+					<li key={index}>
 						<p>{l}</p>
 						<button onClick={() => setList(list.filter(i => i !== l))}>Remove</button>
 					</li>

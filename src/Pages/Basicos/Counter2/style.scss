@@ -1,0 +1,80 @@
+.Counter2Container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .container {
+    margin-top: 10px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    div.Counter2Header {
+      padding: 6px 10px;
+      border-top-left-radius: 9px;
+      border-top-right-radius: 9px;
+      border-bottom: 1px solid black;
+      background-color: royalblue;
+      h2 {
+        font-weight: 900;
+      }
+    }
+  }
+  div.Counter2Main {
+    padding: 16px 10px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+    transition: 0.5s;
+    button {
+      padding: 6px 10px;
+      border: 1px solid black;
+      border-radius: 4px;
+      outline: none;
+      box-shadow: -2px -2px 4px grey;
+      box-shadow: 2px 2px 4px grey;
+      transition: 0.3s;
+      cursor: pointer;
+      &:hover {
+        background-color: gainsboro;
+      }
+      &:active {
+        box-shadow: -1px -1px 4px black;
+        box-shadow: 1px 1px 4px black;
+        transform: scale(0.95);
+        background-color: gray;
+      }
+      &:nth-child(1) {
+        grid-area: 1 / 1 / 2 / 2;
+      }
+      &:nth-child(2) {
+        grid-area: 2 / 1 / 3 / 2;
+      }
+      &:nth-child(3) {
+        grid-area: 3 / 1 / 4 / 2;
+      }
+      &:nth-child(4) {
+        grid-area: 1 / 3 / 2 / 4;
+      }
+      &:nth-child(5) {
+        grid-area: 2 / 3 / 3 / 4;
+      }
+      &:nth-child(6) {
+        grid-area: 3 / 3 / 4 / 4;
+      }
+    }
+    span {
+      grid-area: 1 / 2 / 4 / 3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+      font-weight: 900;
+    }
+  }
+}

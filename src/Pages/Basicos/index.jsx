@@ -4,6 +4,7 @@ import Carousel from 'react-elastic-carousel';
 import "./style.min.css";
 
 import Counter from "./Counter";
+import Counter2 from "./Counter2";
 import DateCalc from "./DateCalc";
 import Form from "./Form";
 import Height from "./Height";
@@ -15,6 +16,7 @@ export default function Basicos() {
 		<div className="basicosContainer">
 			<Carousel className="carouselContainer">
 				<Counter />
+				<Counter2 />
 				<DateCalc />
 				<Form />
 				<Height />
