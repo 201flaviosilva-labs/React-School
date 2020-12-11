@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.62ed4275.chunk.css",
+    "main.js": "/static/js/main.f08d2a0a.chunk.js",
+    "main.js.map": "/static/js/main.f08d2a0a.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.5dfb163b.js",
+    "runtime-main.js.map": "/static/js/runtime-main.5dfb163b.js.map",
+    "static/js/2.5685aabc.chunk.js": "/static/js/2.5685aabc.chunk.js",
+    "static/js/2.5685aabc.chunk.js.map": "/static/js/2.5685aabc.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.6a03adc57061095188c06e10e3b0b221.js": "/precache-manifest.6a03adc57061095188c06e10e3b0b221.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.62ed4275.chunk.css.map": "/static/css/main.62ed4275.chunk.css.map",
+    "static/js/2.5685aabc.chunk.js.LICENSE.txt": "/static/js/2.5685aabc.chunk.js.LICENSE.txt",
+    "static/media/Nublado.png": "/static/media/Nublado.22bc0a36.png",
+    "static/media/Sol.png": "/static/media/Sol.1f7dbf6e.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5dfb163b.js",
+    "static/js/2.5685aabc.chunk.js",
+    "static/css/main.62ed4275.chunk.css",
+    "static/js/main.f08d2a0a.chunk.js"
+  ]
+}
