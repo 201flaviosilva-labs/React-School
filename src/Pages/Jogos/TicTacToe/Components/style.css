@@ -1,0 +1,61 @@
+.H3TTT {
+  margin-bottom: 4px;
+  font-size: 30px;
+  text-align: center;
+  background-color: aquamarine;
+}
+
+.resetTTT {
+  width: 100%;
+  margin-top: 10px;
+  padding: 4px 0;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  border-radius: 2px;
+  background-color: aquamarine;
+  border: 1px solid white;
+  box-shadow: 4px 4px gray;
+  transition: 0.5s;
+}
+
+.resetTTT:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px gray;
+}
+
+.resetTTT:active {
+  transform: translate(3px, 3px);
+  box-shadow: 1px 1px gray;
+}
+
+.TTTBoardContainer {
+  width: 500px;
+  height: 500px;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 5px;
+  gap: 5px;
+  border-radius: 2px;
+  background-color: yellow;
+}
+
+.TTTBoardContainer button {
+  border-radius: 2px;
+  border: 2px solid royalblue;
+  background-color: white;
+  color: black;
+  font-size: 500%;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.TTTBoardContainer button:hover {
+  transform: scale(1.2);
+}
+
+.TTTBoardContainer button:active {
+  transform: scale(1.1);
+}

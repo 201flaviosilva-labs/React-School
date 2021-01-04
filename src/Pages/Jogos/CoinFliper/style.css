@@ -1,0 +1,70 @@
+.CoinFlipperContainer {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr auto;
+  gap: 10px 10px;
+  grid-template-areas: "Coin Graphic" "BtnsPlays Choise";
+}
+
+.CoinFlipperContainer > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+}
+
+.CoinFlipperContainer div.Coin {
+  flex-direction: column;
+  grid-area: "Coin";
+}
+
+.CoinFlipperContainer div.Coin svg {
+  width: 100px;
+  height: 100px;
+}
+
+.CoinFlipperContainer div.Graphic {
+  flex-direction: column;
+  grid-area: "Graphic";
+}
+
+.CoinFlipperContainer div.BtnsPlays {
+  grid-area: "BtnsPlays";
+  justify-content: space-between;
+}
+
+.CoinFlipperContainer div.BtnsPlays button {
+  padding: 4px 6px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.CoinFlipperContainer div.BtnsPlays button:nth-child(1) {
+  background-color: green;
+}
+
+.CoinFlipperContainer div.BtnsPlays button:nth-child(2) {
+  background-color: yellow;
+}
+
+.CoinFlipperContainer div.BtnsPlays button:nth-child(3) {
+  background-color: orange;
+}
+
+.CoinFlipperContainer div.BtnsPlays button:nth-child(4) {
+  background-color: red;
+}
+
+.CoinFlipperContainer div.Choise {
+  justify-content: space-evenly;
+  grid-area: "Choise";
+}
+
+.CoinFlipperContainer div.Choise label {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
