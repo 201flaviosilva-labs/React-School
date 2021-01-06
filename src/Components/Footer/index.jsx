@@ -1,5 +1,9 @@
-import React from 'react'
+import React from 'react';
+
+import "./style.css";
 
 export default function Footer() {
-	return <footer><p>Footer</p></footer>
+	return <footer>
+		<a href="https://gitlab.com/201flaviosilva/ReactSchool" target="_blank">GitLab</a>
+	</footer>
 }

@@ -9,9 +9,11 @@ export default function Weather() {
 	const [resultado, setResultado] = useState("");
 
 	useEffect(() => {
-		axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=4d8fb5b93d4af21d66a2948710284366`).then(resp => {
-			setResultado(resp.data.weather[0].main);
-		});
+		fetch(`https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=4d8fb5b93d4af21d66a2948710284366`)
+			.then(resp => resp.json())
+			.then(resp => {
+				if (resp.weather) setResultado(resp.weather[0].main);
+			});
 	}, [search]);
 
 	return (
