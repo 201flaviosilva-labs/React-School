@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
 
 import Procurar from "./Procurar";
 import Carta from "./Carta";
+
+import "./Style.min.css";
 
 export default function Weather() {
 	const [search, setSearch] = useState("Porto");
@@ -17,7 +18,7 @@ export default function Weather() {
 	}, [search]);
 
 	return (
-		<div>
+		<div className="WeatherContainer">
 			<Procurar search={search} setSearch={setSearch} />
 			<Carta resultado={resultado} />
 		</div>

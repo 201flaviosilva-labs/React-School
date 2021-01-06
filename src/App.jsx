@@ -1,6 +1,8 @@
 import React from 'react';
 import { BrowserRouter } from "react-router-dom";
 
+import PageProvider from "./Context/PageContext";
+
 import Header from "./Components/Header";
 import Main from "./Components/Main";
 import Footer from "./Components/Footer";
@@ -8,11 +10,13 @@ import Footer from "./Components/Footer";
 export default function App() {
   return (
     <>
-      <BrowserRouter>
-        <Header />
-        <Main />
-        <Footer />
-      </BrowserRouter>
+      <PageProvider>
+        <BrowserRouter>
+          <Header />
+          <Main />
+          <Footer />
+        </BrowserRouter>
+      </PageProvider>
     </>
   );
 }

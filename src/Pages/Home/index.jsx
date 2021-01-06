@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 
 import Counter2 from "../../Components/Basicos/Counter2";
+import TicTacToe from "../../Components/Jogos/TicTacToe";
 import Weather from "../../Components/Api/Weather";
 
 import "./Style.min.css";
@@ -10,12 +11,12 @@ export default function Home() {
 
 	return (
 		<div className="HomeContainer">
-			<h1>React School</h1>
+			<h2>Home</h2>
 
 			<div className="Main">
 				<div className="ExemploProjeto">
 					<div className="Header">
-						<h2>Básicos</h2>
+						<h3>Básicos</h3>
 						<Link to="/basicos">Ir</Link>
 					</div>
 
@@ -26,19 +27,19 @@ export default function Home() {
 
 				<div className="ExemploProjeto">
 					<div className="Header">
-						<h2>Jogos</h2>
+						<h3>Jogos</h3>
 						<Link to="/jogos">Ir</Link>
 					</div>
 
 					<div className="Projeto">
-
+						<TicTacToe />
 					</div>
 
 				</div>
 
 				<div className="ExemploProjeto">
 					<div className="Header">
-						<h2>Apis</h2>
+						<h3>Apis</h3>
 						<Link to="/apis">Ir</Link>
 					</div>
 

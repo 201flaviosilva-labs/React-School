@@ -8,7 +8,7 @@
 .HomeContainer .Main {
   width: 95vw;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(350px, auto));
   gap: 10px;
 }
 
