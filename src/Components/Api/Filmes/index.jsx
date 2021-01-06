@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import Procurar from "./Procurar";
 import ListarFilmes from "./Listar";
 
+import "./Style.min.css";
+
 export default function Filmes() {
 	const [listMovies, setListMovies] = useState([]);
 	const [search, setSearch] = useState("Road");
@@ -13,10 +15,10 @@ export default function Filmes() {
 	}, [search]);
 
 	return (
-		<>
+		<div className="filmesContainer">
 			<h2>Filmes</h2>
 			<Procurar search={search} setSearch={setSearch} />
 			<ListarFilmes listMovies={listMovies} />
-		</>
+		</div>
 	)
 }

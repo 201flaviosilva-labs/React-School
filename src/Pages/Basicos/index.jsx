@@ -3,13 +3,13 @@ import Carousel from 'react-elastic-carousel';
 
 import "./style.min.css";
 
-import Counter from "./Counter";
-import Counter2 from "./Counter2";
-import DateCalc from "./DateCalc";
-import Form from "./Form";
-import Height from "./Height";
-import MagicWords from "./MagicWords";
-import Todo from "./Todo";
+import Counter from "../../Components/Basicos/Counter";
+import Counter2 from "../../Components/Basicos/Counter2";
+import DateCalc from "../../Components/Basicos/DateCalc";
+import Form from "../../Components/Basicos/Form";
+import Height from "../../Components/Basicos/Height";
+import MagicWords from "../../Components/Basicos/MagicWords";
+import Todo from "../../Components/Basicos/Todo";
 
 export default function Basicos() {
 	return (

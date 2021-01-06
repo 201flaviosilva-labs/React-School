@@ -5,6 +5,7 @@ import React from 'react';
 export default function Jogos() {
 	return (
 		<div className="jogosContainer">
+			<h1>Jogos</h1>
 		</div>
 	)
 }
