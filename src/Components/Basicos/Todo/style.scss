@@ -1,0 +1,29 @@
+div.TodoContainerBasic {
+  max-height: 500px;
+
+  div.Input {
+    display: flex;
+  }
+
+  ul {
+    overflow-y: auto;
+    li {
+      display: flex;
+      align-items: center;
+      button {
+        margin-left: 10px;
+        padding: 4px 6px;
+        background: red;
+        border: 2px solid black;
+        cursor: pointer;
+        border-radius: 4px;
+        outline: none;
+      }
+    }
+  }
+
+  div.ActionBtns {
+    display: flex;
+    flex-direction: column;
+  }
+}

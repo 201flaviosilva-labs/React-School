@@ -8,7 +8,6 @@ export default function MagicWords() {
 	return (
 		<div style={styles} className="ContainerBasicCenter">
 			<input
-				style={{ width: "90%" }}
 				type="text"
 				placeholder="Alguma Coisa"
 				title="Alguma Coisa"
@@ -24,6 +23,8 @@ export default function MagicWords() {
 			<p><span>Nada de espaços</span>: <span>{word.split("")}</span></p>
 			<p><span>Só números</span>: <span>{word.replace(/[^0-9]/g, '')}</span></p>
 			<p><span>Só letras</span>: <span>{word.replace(/[^a-zA-Z]/g, '')}</span></p>
+			<p><span>Num. Letras</span>: <span>{word.length}</span></p>
+			<p><span>Num. Palavras</span>: <span>{word.trim().split(/\s+/).length}</span></p>
 		</div>
 	)
 }
