@@ -5,7 +5,7 @@ export default function Procurar({ search, setSearch }) {
 		<label>
 			Cidade:
 			<input
-				placeholder="Filme"
+				placeholder="Cidade"
 				value={search}
 				onChange={(e) => setSearch(e.target.value)}
 			/>

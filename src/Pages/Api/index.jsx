@@ -5,6 +5,7 @@ import "./style.min.css";
 
 import Filmes from "../../Components/Api/Filmes";
 import Weather from "../../Components/Api/Weather";
+import PokemonAPI from "../../Components/Api/PokemonAPI";
 
 
 export default function Apis() {
@@ -13,6 +14,7 @@ export default function Apis() {
 			<Carousel className="carouselContainer">
 				<Weather />
 				<Filmes />
+				<PokemonAPI />
 			</Carousel>
 		</div>
 	)

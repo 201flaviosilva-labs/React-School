@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import Counter2 from "../../Components/Basicos/Counter2";
 import TicTacToe from "../../Components/Jogos/TicTacToe";
-import Weather from "../../Components/Api/Weather";
+import PokemonAPI from "../../Components/Api/PokemonAPI";
 
 import "./Style.min.css";
 
@@ -44,7 +44,7 @@ export default function Home() {
 					</div>
 
 					<div className="Projeto">
-						<Weather />
+						<PokemonAPI />
 					</div>
 
 				</div>
