@@ -40,7 +40,9 @@ textarea {
 
 button,
 a,
-label {
+label,
+input,
+textarea {
   cursor: pointer;
 }
 

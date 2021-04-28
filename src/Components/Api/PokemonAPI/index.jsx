@@ -9,12 +9,7 @@ export default function PokemonAPI() {
 	useEffect(() => {
 		fetch("https://pokeapi.co/api/v2/pokemon/" + findPoke)
 			.then(r => r.json())
-			.then(response => {
-				if (response) {
-					console.log(response);
-					if (response && response.id) setPokemon(response);
-				}
-			})
+			.then(response => (response && response.id) && setPokemon(response));
 	}, [findPoke]);
 
 	return (
@@ -38,8 +33,7 @@ export default function PokemonAPI() {
 						<li key={index}>
 							<p>{a.ability.name}</p>
 						</li>
-					)
-					}
+					)}
 				</ul>}
 			</div>
 		</div>

@@ -1,5 +1,9 @@
+# ---- Manual
 Beep/
+ignore/
 
+
+# ---- Automático
 # NodeJS
 # Logs
 logs

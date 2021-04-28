@@ -1,4 +1,50 @@
-.WeatherContainer img {
-  width: 50px;
-  height: 50px;
+.WeatherContainer label {
+  display: flex;
+  align-items: center;
+}
+
+.WeatherContainer label span {
+  font-weight: bold;
+  font-size: 30px;
+  text-shadow: 0 0 2px #011a22;
+}
+
+.WeatherContainer label input {
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 6px 10px;
+  transition: 0.5s;
+  box-shadow: 0 0 10px #1e1e00;
+}
+
+.WeatherContainer label input:focus, .WeatherContainer label input:hover {
+  transform: scale(1.05);
+}
+
+.WeatherContainer .WeatherCardContainer {
+  margin-top: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: rgba(28, 143, 5, 0.452);
+  box-shadow: 0 0 10px #264d1e;
+}
+
+.WeatherContainer .WeatherCardContainer h1 {
+  font-size: 50px;
+  border-bottom: 1px solid #770000;
+  border-radius: 10px;
+}
+
+.WeatherContainer .WeatherCardContainer img,
+.WeatherContainer .WeatherCardContainer svg {
+  width: 250px;
+  height: 250px;
+  margin-top: 10px;
+  box-shadow: 0 0 20px #1e0000;
+  border-radius: 10px;
 }

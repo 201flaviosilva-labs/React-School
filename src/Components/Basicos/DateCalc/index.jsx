@@ -25,12 +25,12 @@ export default function DateCalc() {
 	const [months, setMonths] = useState();
 	const [years, setYears] = useState();
 
-	let dataChoise = new Date(date);
+	let dataChoice = new Date(date);
 	useEffect(() => {
-		dataChoise = new Date(date);
-		setMilliseconds(Math.floor(dateNow - dataChoise));
-		setYears(dateNow.getFullYear() - dataChoise.getFullYear());
-		setWeeksDay(weekDays[dataChoise.getDay()]);
+		dataChoice = new Date(date);
+		setMilliseconds(Math.floor(dateNow - dataChoice));
+		setYears(dateNow.getFullYear() - dataChoice.getFullYear());
+		setWeeksDay(weekDays[dataChoice.getDay()]);
 	}, [date]);
 
 	useEffect(() => setSeconds(Math.floor(milliseconds / 1000)), [milliseconds]);
@@ -38,7 +38,7 @@ export default function DateCalc() {
 	useEffect(() => setHours(Math.floor(minutes / 60)), [minutes]);
 	useEffect(() => setDays(Math.floor(hours / 24)), [hours]);
 	useEffect(() => setWeeks(Math.floor(days / 7)), [days]);
-	useEffect(() => setMonths(years * 12 + dateNow.getMonth() - dataChoise.getMonth()), [years]);
+	useEffect(() => setMonths(years * 12 + dateNow.getMonth() - dataChoice.getMonth()), [years]);
 
 	return (
 		<div className="ContainerBasicCenter">
@@ -54,7 +54,7 @@ export default function DateCalc() {
 
 				<div>
 					<p><span>Data</span>: <span>{date.replace("T", " ")}</span></p>
-					<p><span>Milisegundos</span>: <span>{milliseconds}</span></p>
+					<p><span>Milissegundos</span>: <span>{milliseconds}</span></p>
 					<p><span>Segundos</span>: <span>{seconds}</span></p>
 					<p><span>Minutos</span>: <span>{minutes}</span></p>
 					<p><span>Horas</span>: <span>{hours}</span></p>
