@@ -1,19 +1,29 @@
-import React from 'react';
-import Carousel from 'react-elastic-carousel';
+import React, { useState } from 'react';
+
+import Modal from "../../Components/Modal/Modal";
 
 import "./Style.min.css";
 
-import CoinFliper from "../../Components/Jogos/CoinFliper";
-import TicTacToe from "../../Components/Jogos/TicTacToe";
+import JOGOS from "../../Components/Jogos/Jogos";
 
 export default function Jogos() {
+	const [isVisibleReact3D, setIsVisibleReact3D] = useState(false);
+	const [isVisibleCoinFlip, setIsVisibleCoinFlip] = useState(false);
+	const [isVisibleTicTacToe, setIsVisibleTicTacToe] = useState(false);
+
 	return (
 		<div className="jogosContainer">
 			<h2>Jogos</h2>
-			<Carousel className="carouselContainer">
-				<CoinFliper />
-				<TicTacToe />
-			</Carousel>
+
+			<div className="SelectGameBtns">
+				<button onClick={() => setIsVisibleReact3D(true)}>React 3D</button>
+				<button onClick={() => setIsVisibleCoinFlip(true)}>Coin Flipper</button>
+				<button onClick={() => setIsVisibleTicTacToe(true)}>Tic Tac Toe</button>
+			</div>
+
+			{isVisibleReact3D && <Modal setIsVisible={setIsVisibleReact3D}> <JOGOS.React3D /> </Modal>}
+			{isVisibleCoinFlip && <Modal setIsVisible={setIsVisibleCoinFlip}> <JOGOS.CoinFlipper /> </Modal>}
+			{isVisibleTicTacToe && <Modal setIsVisible={setIsVisibleTicTacToe}> <JOGOS.TicTacToe /> </Modal>}
 		</div>
 	)
 }

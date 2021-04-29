@@ -1,6 +1,47 @@
 div.jogosContainer {
   width: 100vw;
+
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  div.SelectGameBtns {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 10px;
+
+    padding: 10px;
+
+    button {
+      height: 50px;
+
+      border: 1px solid black;
+      border-radius: 4px;
+      // background-color: rgb(202, 202, 202);
+      background: none;
+      font-size: 20px;
+      font-weight: bold;
+      box-shadow: 0 0 10px rgb(202, 202, 202);
+
+      // https://codepen.io/GeorgePark/pen/MrjbEr?editors=0110
+
+      text-shadow: 0 0 1px white, 0 0 2px white, 0 0 4px red, 0 0 8px red,
+        0 0 16px red;
+      box-shadow: 0 0 1px white, 0 0 2px white, 0 0 4px rgb(110, 225, 65),
+        0 0 8px rgb(110, 225, 65), 0 0 16px rgb(110, 225, 65);
+
+      transition: 0.5s;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+
+      &:active {
+        transform: scale(0.95);
+        opacity: 0.9;
+      }
+    }
+  }
 }
