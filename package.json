@@ -14,7 +14,7 @@
   "scripts": {
     "clear": "rm -rf build && rm -rf out && rm -rf dist",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "CI= react-scripts build",
     "eject": "react-scripts eject"
   },
   "dependencies": {
