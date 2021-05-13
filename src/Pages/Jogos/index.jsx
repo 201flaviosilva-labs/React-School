@@ -4,7 +4,7 @@ import Modal from "../../Components/Modal/Modal";
 
 import "./Style.min.css";
 
-import JOGOS from "../../Components/Jogos/Jogos";
+import JOGOS from "../../Projects/Jogos/Jogos";
 
 export default function Jogos() {
 	const [isVisibleReact3D, setIsVisibleReact3D] = useState(false);

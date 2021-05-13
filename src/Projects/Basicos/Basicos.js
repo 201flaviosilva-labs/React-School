@@ -6,10 +6,10 @@ import Height from "./Height";
 import MagicWords from "./MagicWords";
 import Todo from "./Todo";
 
-
-import MoviesAPI from "./MoviesAPI/index";
-import PokemonAPI from "./PokemonAPI/index";
-import WeatherAPI from "./WeatherAPI/index";
+// APIs
+import MoviesAPI from "./MoviesAPI";
+import PokemonAPI from "./PokemonAPI";
+import WeatherAPI from "./WeatherAPI";
 
 const Basicos = {
 	Counter,

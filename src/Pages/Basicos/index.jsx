@@ -3,7 +3,7 @@ import Carousel from 'react-elastic-carousel';
 
 import "./style.min.css";
 
-import B from "../../Components/Basicos/Basicos";
+import B from "../../Projects/Basicos/Basicos";
 
 export default function Basicos() {
 	return (
@@ -17,9 +17,9 @@ export default function Basicos() {
 				<B.MagicWords />
 				<B.Todo />
 
-				<B.Weather />
-				<B.Movies />
+				<B.MoviesAPI />
 				<B.PokemonAPI />
+				<B.WeatherAPI />
 			</Carousel>
 		</div>
 	)
