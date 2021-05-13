@@ -8,7 +8,6 @@ import JOGOS from "../../Projects/Jogos/Jogos";
 
 export default function Jogos() {
 	const [isVisibleReact3D, setIsVisibleReact3D] = useState(false);
-	const [isVisibleCoinFlip, setIsVisibleCoinFlip] = useState(false);
 	const [isVisibleTicTacToe, setIsVisibleTicTacToe] = useState(false);
 
 	return (
@@ -17,12 +16,10 @@ export default function Jogos() {
 
 			<div className="SelectGameBtns">
 				<button onClick={() => setIsVisibleReact3D(true)}>React 3D</button>
-				<button onClick={() => setIsVisibleCoinFlip(true)}>Coin Flipper</button>
 				<button onClick={() => setIsVisibleTicTacToe(true)}>Tic Tac Toe</button>
 			</div>
 
 			{isVisibleReact3D && <Modal setIsVisible={setIsVisibleReact3D}> <JOGOS.React3D /> </Modal>}
-			{isVisibleCoinFlip && <Modal setIsVisible={setIsVisibleCoinFlip}> <JOGOS.CoinFlipper /> </Modal>}
 			{isVisibleTicTacToe && <Modal setIsVisible={setIsVisibleTicTacToe}> <JOGOS.TicTacToe /> </Modal>}
 		</div>
 	)

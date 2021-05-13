@@ -9,6 +9,7 @@ export default function Basicos() {
 	return (
 		<div className="basicosContainer">
 			<Carousel className="carouselContainer">
+				<B.CoinFlipper />
 				<B.Counter />
 				<B.Counter2 />
 				<B.DateCalc />

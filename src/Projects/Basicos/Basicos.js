@@ -1,3 +1,4 @@
+import CoinFlipper from "./CoinFlipper/index";
 import Counter from "./Counter";
 import Counter2 from "./Counter2";
 import DateCalc from "./DateCalc";
@@ -12,6 +13,7 @@ import PokemonAPI from "./PokemonAPI";
 import WeatherAPI from "./WeatherAPI";
 
 const Basicos = {
+	CoinFlipper,
 	Counter,
 	Counter2,
 	DateCalc,
