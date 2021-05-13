@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from 'react';
 
 import "./style.min.css";
@@ -25,20 +26,21 @@ export default function DateCalc() {
 	const [months, setMonths] = useState();
 	const [years, setYears] = useState();
 
-	let dataChoice = new Date(date);
+	const [dataChoice, setDataChoice] = useState(new Date(date));
+	useEffect(() => setDataChoice(new Date(date)), [date]);
+
 	useEffect(() => {
-		dataChoice = new Date(date);
 		setMilliseconds(Math.floor(dateNow - dataChoice));
 		setYears(dateNow.getFullYear() - dataChoice.getFullYear());
 		setWeeksDay(weekDays[dataChoice.getDay()]);
-	}, [date]);
+	}, [dataChoice, dateNow, weekDays]);
 
 	useEffect(() => setSeconds(Math.floor(milliseconds / 1000)), [milliseconds]);
 	useEffect(() => setMinutes(Math.floor(seconds / 60)), [seconds]);
 	useEffect(() => setHours(Math.floor(minutes / 60)), [minutes]);
 	useEffect(() => setDays(Math.floor(hours / 24)), [hours]);
 	useEffect(() => setWeeks(Math.floor(days / 7)), [days]);
-	useEffect(() => setMonths(years * 12 + dateNow.getMonth() - dataChoice.getMonth()), [years]);
+	useEffect(() => setMonths(years * 12 + dateNow.getMonth() - dataChoice.getMonth()), [dataChoice, dateNow, years]);
 
 	return (
 		<div className="ContainerBasicCenter">

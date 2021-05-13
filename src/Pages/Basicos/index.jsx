@@ -12,7 +12,7 @@ export default function Basicos() {
 				<B.CoinFlipper />
 				<B.Counter />
 				<B.Counter2 />
-				<B.DateCalc />
+				{/* <B.DateCalc /> */}
 				<B.Form />
 				<B.Height />
 				<B.MagicWords />

@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Stars, Stats } from "@react-three/drei"; // https://github.com/pmndrs/drei // https://drei.pmnd.rs
 import { Physics } from "@react-three/cannon";
