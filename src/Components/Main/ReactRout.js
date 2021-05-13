@@ -1,13 +1,11 @@
 import React from 'react';
 import { Switch, Route, } from "react-router-dom";
 
-
 import Home from "../../Pages/Home";
 import Basicos from "../../Pages/Basicos";
 import Medios from "../../Pages/Medio";
 import Avancado from "../../Pages/Avancado";
 import Jogos from "../../Pages/Jogos";
-
 
 export default function ReactRout() {
 	return (

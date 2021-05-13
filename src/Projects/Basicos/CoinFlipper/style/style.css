@@ -7,8 +7,7 @@ div.CoinFlipperContainer {
 }
 
 div.CoinFlipperContainer div.Wrapper {
-  width: 50%;
-  height: 50%;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;

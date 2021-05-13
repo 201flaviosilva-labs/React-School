@@ -31,7 +31,8 @@ export default function Form() {
 
 	return (
 		<div className="ContainerBasicCenter ">
-			<marquee direction="left" scrollamount="8" behavior="alternate"><h1>Eu sou um formulário 🥲</h1></marquee>
+			<marquee direction="left" behavior="alternate"><h1>Eu sou um formulário 🥲</h1></marquee>
+
 			<div className="FormContainer ">
 				<form onSubmit={handleSubmit}>
 					<label>

@@ -1,24 +1,26 @@
+$space: 10px;
+
 div.basicosContainer {
-	width: 100vw;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	div.carouselContainer {
-		width: 95vw;
-		padding: 10px;
-		border: 2px solid black;
-		background-color:rgb(214, 214, 214);
-		div.ContainerBasicCenter {
-			width: 100%;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			h2 {
-				font-size: 30px;
-				font-weight: 900;
-				text-shadow: 0 0 10px yellow;
-			}
-		}
-	}
+  width: 100vw;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, auto));
+  justify-content: center;
+  gap: $space;
+  padding: $space;
+
+  & > div {
+    width: 500px;
+    height: 500px;
+    padding: 4px;
+    border: 2px solid black;
+    border-radius: 6px;
+    box-shadow: 0 0 10px black;
+    transition: 0.5s;
+
+    &:hover {
+      background-color: rgba(172, 172, 172, 0.5);
+      transform: scale(1.1);
+    }
+  }
 }
