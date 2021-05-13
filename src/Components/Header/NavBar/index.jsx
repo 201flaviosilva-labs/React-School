@@ -47,13 +47,6 @@ export default function NavBar() {
 					>Jogos</Link>
 				</li>
 
-				<li>
-					<Link
-						to="/apis"
-						style={page === "Apis" ? { backgroundColor: "red" } : { backgroundColor: "white" }}
-						onClick={() => { setPage("Apis") }}
-					>Apis</Link>
-				</li>
 			</ul>
 		</nav>
 	)

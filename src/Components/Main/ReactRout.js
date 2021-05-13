@@ -6,7 +6,6 @@ import Home from "../../Pages/Home";
 import Basicos from "../../Pages/Basicos";
 import Medios from "../../Pages/Medio";
 import Avancado from "../../Pages/Avancado";
-import Apis from "../../Pages/Api";
 import Jogos from "../../Pages/Jogos";
 
 
@@ -20,7 +19,6 @@ export default function ReactRout() {
 				<Route path="/avancado" component={Avancado} />
 
 				<Route path="/jogos" component={Jogos} />
-				<Route path="/apis" component={Apis} />
 			</Switch>
 		</>
 	)

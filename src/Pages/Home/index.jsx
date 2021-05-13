@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 import Counter2 from "../../Components/Basicos/Counter2";
 import TicTacToe from "../../Components/Jogos/TicTacToe";
-import PokemonAPI from "../../Components/Api/PokemonAPI";
 
 import "./Style.min.css";
 
@@ -33,18 +32,6 @@ export default function Home() {
 
 					<div className="Projeto">
 						<TicTacToe />
-					</div>
-
-				</div>
-
-				<div className="ExemploProjeto">
-					<div className="Header">
-						<h3>Apis</h3>
-						<Link to="/apis">Ir</Link>
-					</div>
-
-					<div className="Projeto">
-						<PokemonAPI />
 					</div>
 
 				</div>
