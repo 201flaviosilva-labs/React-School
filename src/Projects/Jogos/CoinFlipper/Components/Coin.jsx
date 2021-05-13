@@ -1,15 +1,20 @@
-import React from 'react';
-import { FaUser, FaBitcoin, FaMoneyBill } from 'react-icons/fa';
+import React from "react";
+import { BiBitcoin, BiCoin } from "react-icons/bi";
+import { FaCrown } from "react-icons/fa";
 
 export default function Coin({ CoinSelected }) {
 	return (
 		<>
 			<CoinImg CoinSelected={CoinSelected} />
-			<h3>{CoinSelected ? CoinSelected : "Make Your Bet"}</h3>
+			<p>{CoinSelected ? CoinSelected : "Make Your Bet"}</p>
 		</>
 	)
 }
 
 function CoinImg({ CoinSelected }) {
-	return CoinSelected ? (CoinSelected === "Face") ? <FaUser /> : <FaBitcoin /> : <FaMoneyBill />;
+	return CoinSelected ?
+		(CoinSelected === "Face")
+			? <BiBitcoin />
+			: <FaCrown />
+		: <BiCoin />;
 }

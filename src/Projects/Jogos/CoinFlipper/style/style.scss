@@ -1,0 +1,79 @@
+div.CoinFlipperContainer {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  div.Wrapper {
+    width: 50%;
+    height: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 0 0 10px black;
+
+    div.Coin {
+      padding: 20px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      border: 1px solid black;
+      border-radius: 8px;
+      box-shadow: 0 0 10px black;
+
+      svg {
+        width: 100px;
+        height: 100px;
+      }
+      p {
+        text-align: center;
+        font-family: "Press Start 2P";
+        font-size: 20px;
+        font-weight: 900;
+        text-shadow: 0 0 2px white;
+      }
+    }
+
+    div.Graphic {
+      margin: 20px 0;
+      border: 1px solid black;
+      border-radius: 8px;
+      box-shadow: 0 0 10px black;
+    }
+
+    button {
+      width: 50%;
+      padding: 10px 0;
+
+      font-family: "Press Start 2P";
+      font-weight: bold;
+      font-size: 25px;
+      color: #fff;
+
+      border: 1px solid white;
+      border-radius: 4px;
+      box-shadow: 0 0 2px white;
+      background-color: black;
+
+      transition: 0.5s;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+
+      &:active {
+        transform: scale(0.95);
+      }
+    }
+  }
+}
