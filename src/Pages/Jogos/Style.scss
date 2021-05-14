@@ -9,9 +9,8 @@ div.jogosContainer {
     width: 100%;
 
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 10px;
-
     padding: 10px;
 
     button {
@@ -25,8 +24,7 @@ div.jogosContainer {
       font-weight: bold;
       box-shadow: 0 0 10px rgb(202, 202, 202);
 
-      // https://codepen.io/GeorgePark/pen/MrjbEr?editors=0110
-
+      // (Example) https://codepen.io/GeorgePark/pen/MrjbEr?editors=0110
       text-shadow: 0 0 1px white, 0 0 2px white, 0 0 4px red, 0 0 8px red,
         0 0 16px red;
       box-shadow: 0 0 1px white, 0 0 2px white, 0 0 4px rgb(110, 225, 65),
