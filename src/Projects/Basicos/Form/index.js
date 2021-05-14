@@ -6,9 +6,8 @@ import "./style.min.css";
 export default function Form() {
 	const [name, setName] = useState("");
 	const [height, setHeight] = useState(0);
-	const [birthDay, setBirthDay] = useState();
+	const [birthDay, setBirthDay] = useState(new Date());
 	const [country, setCountry] = useState("");
-	const [pizza, setPizza] = useState({ chocolate: false, ananas: true, strawberries: false });
 	const [sex, setSex] = useState("Male");
 
 	function handleSubmit(event) {
@@ -20,146 +19,91 @@ export default function Form() {
 		console.log("Sex: ", sex);
 	}
 
-	function handleChange(evt) {
-		const value =
-			evt.target.type === "checkbox" ? evt.target.checked : evt.target.value;
-		setPizza({
-			...pizza,
-			[evt.target.name]: value
-		});
-	}
-
 	return (
-		<div className="ContainerBasicCenter ">
+		<div className="FormContainer">
 			<marquee direction="left" behavior="alternate"><h1>Eu sou um formulário 🥲</h1></marquee>
 
-			<div className="FormContainer ">
-				<form onSubmit={handleSubmit}>
+			<form onSubmit={handleSubmit}>
+				<label>
+					<span>Nome:</span>
+					<input
+						type="text"
+						placeholder="Name"
+						value={name}
+						onChange={(e) => setName(e.target.value)}
+					/>
+				</label>
+
+
+				<label>
+					<span>Altura:</span>
+					<input
+						type="number"
+						placeholder="Height"
+						value={height}
+						onChange={(e) => setHeight(e.target.value)} />
+				</label>
+
+
+				<label>
+					<span>Nascimento:</span>
+					<input
+						type="date"
+						placeholder="Birthday"
+						value={birthDay}
+						onChange={(e) => setBirthDay(e.target.value)} />
+				</label>
+
+
+				<label>
+					<span>Cidade:</span>
+					<select value={country} onChange={(e) => setCountry(e.target.value)}>
+						<optgroup label="Portugal">
+							<option value="Açores" checked>Açores</option>
+							<option value="Alentejo">Alentejo</option>
+							<option value="Coimbra">Coimbra</option>
+							<option value="Lisboa">Lisboa</option>
+							<option value="Porto">Porto</option>
+						</optgroup>
+						<optgroup label="USA">
+							<option value="California">California</option>
+							<option value="Washington D.C.">Washington D.C.</option>
+						</optgroup>
+					</select>
+				</label>
+
+				<div>
+					<h3>Género:</h3>
 					<label>
-						<span>Nome:</span>
 						<input
-							type="text"
-							placeholder="Name"
-							value={name}
-							onChange={(e) => setName(e.target.value)}
-						/>
-					</label>
-
-					<br />
+							type="radio"
+							name="sex"
+							value="Male"
+							checked={sex === "Male"}
+							onChange={() => setSex("Male")} />Masculino</label>
 
 					<label>
-						<span>Altura:</span>
 						<input
-							type="number"
-							placeholder="Height"
-							value={height}
-							onChange={(e) => setHeight(e.target.value)} />
-					</label>
-
-					<br />
+							type="radio"
+							name="sex"
+							value="Fem"
+							checked={sex === "Fem"}
+							onChange={() => setSex("Fem")} />Feminino</label>
 
 					<label>
-						<span>Nascimento:</span>
 						<input
-							type="date"
-							placeholder="Birthday"
-							value={birthDay}
-							onChange={(e) => setBirthDay(e.target.value)} />
-					</label>
+							type="radio"
+							name="sex"
+							value="Other"
+							checked={sex === "Other"}
+							onChange={() => setSex("Other")} />Outros</label>
+				</div>
 
-					<br />
-
-					<label>
-						<span>Cidade:</span>
-						<select value={country} onChange={(e) => setCountry(e.target.value)}>
-							<optgroup label="Portugal">
-								<option value="Açores" checked>Açores</option>
-								<option value="Alentejo">Alentejo</option>
-								<option value="Coimbra">Coimbra</option>
-								<option value="Lisboa">Lisboa</option>
-								<option value="Porto">Porto</option>
-							</optgroup>
-							<optgroup label="USA">
-								<option value="California">California</option>
-								<option value="Washington D.C.">Washington D.C.</option>
-							</optgroup>
-						</select>
-					</label>
-
-					<br />
-
-					<div>
-						<h3>A pizza é com:</h3>
-						<label>
-							<input
-								type="checkbox"
-								name="Pizza"
-								value="chocolate"
-								checked={pizza.chocolate}
-								// onChange={() => setPizza(...pizza, { chocolate: true })}
-								onChange={handleChange}
-							/>Chocolate</label>
-						<br />
-
-						<label>
-							<input
-								type="checkbox"
-								name="Pizza"
-								value="ananas"
-								checked={pizza.ananas}
-								// onChange={() => setPizza((prevState) => ({ ...prevState, ananas: true }))}
-								onChange={handleChange}
-							/>Ananás</label>
-						<br />
-
-						<label>
-							<input
-								type="checkbox"
-								name="Pizza"
-								value="strawberries"
-								checked={pizza.strawberries}
-								// onChange={() => setPizza(...pizza, { strawberries: true })}
-								onChange={handleChange}
-							/>Cerejas</label>
-						<br />
-					</div>
-
-					<br />
-
-					<div>
-						<h3>Genero:</h3>
-						<label>
-							<input
-								type="radio"
-								name="sex"
-								value="Male"
-								checked={sex === "Male"}
-								onChange={() => setSex("Male")} />Masculino</label>
-						<br />
-
-						<label>
-							<input
-								type="radio"
-								name="sex"
-								value="Fem"
-								checked={sex === "Fem"}
-								onChange={() => setSex("Fem")} />Femenino</label>
-						<br />
-
-						<label>
-							<input
-								type="radio"
-								name="sex"
-								value="Other"
-								checked={sex === "Other"}
-								onChange={() => setSex("Other")} />Outros</label>
-						<br />
-					</div>
-
+				<div>
 					<button type="reset">Recomeçar</button>
 					<button type="submit">Submeter</button>
-				</form>
-			</div>
+				</div>
+			</form>
 		</div>
 	)
 }

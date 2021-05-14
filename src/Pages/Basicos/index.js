@@ -9,7 +9,6 @@ export default function Basicos() {
 		<div className="basicosContainer">
 			<B.CoinFlipper />
 			<B.Counter />
-			<B.Counter2 />
 			{/* <B.DateCalc /> */}
 			<B.Form />
 			<B.Height />

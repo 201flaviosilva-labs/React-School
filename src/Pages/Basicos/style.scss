@@ -21,6 +21,7 @@ div.basicosContainer {
     &:hover {
       background-color: rgba(172, 172, 172, 0.5);
       transform: scale(1.1);
+      z-index: 10;
     }
   }
 }

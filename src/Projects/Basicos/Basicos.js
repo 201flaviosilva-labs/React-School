@@ -1,6 +1,5 @@
 import CoinFlipper from "./CoinFlipper/index";
 import Counter from "./Counter";
-import Counter2 from "./Counter2";
 import DateCalc from "./DateCalc";
 import Form from "./Form";
 import Height from "./Height";
@@ -15,7 +14,6 @@ import WeatherAPI from "./WeatherAPI";
 const Basicos = {
 	CoinFlipper,
 	Counter,
-	Counter2,
 	DateCalc,
 	Form,
 	Height,
