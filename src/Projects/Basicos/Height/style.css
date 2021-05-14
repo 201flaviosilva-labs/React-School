@@ -27,4 +27,13 @@ div.HeightContainer button {
   border: 1px solid black;
   border-radius: 10px;
   font-size: 20px;
+  transition: 0.5s;
+}
+
+div.HeightContainer button:hover {
+  transform: scale(1.05);
+}
+
+div.HeightContainer button:active {
+  transform: scale(0.95);
 }

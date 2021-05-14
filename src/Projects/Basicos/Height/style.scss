@@ -23,5 +23,15 @@ div.HeightContainer {
     border: 1px solid black;
     border-radius: 10px;
     font-size: 20px;
+
+    transition: 0.5s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
   }
 }

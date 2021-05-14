@@ -22,6 +22,9 @@ const dataDefault = {
 
 const options = {
 	responsive: true,
+	animation: {
+		duration: 0
+	},
 	scales: {
 		yAxes: [
 			{
@@ -59,7 +62,9 @@ export default function Grafico({ numFace, numCrown }) {
 
 	return (
 		<>
-			<Bar data={data} options={options} height={200} width={300} />
+			<Bar data={data}
+				options={options}
+				className="CanvasGraphic" />
 		</>
 	)
 }

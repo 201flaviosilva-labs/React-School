@@ -17,7 +17,12 @@ div.CoinFlipperContainer div.Wrapper {
   box-shadow: 0 0 10px black;
 }
 
+div.CoinFlipperContainer div.Wrapper h2 {
+  font-family: "Press Start 2P";
+}
+
 div.CoinFlipperContainer div.Wrapper div.Coin {
+  margin-top: 10px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -42,6 +47,8 @@ div.CoinFlipperContainer div.Wrapper div.Coin p {
 }
 
 div.CoinFlipperContainer div.Wrapper div.Graphic {
+  max-width: 300px;
+  max-height: 300px;
   margin: 20px 0;
   border: 1px solid black;
   border-radius: 8px;
@@ -60,12 +67,4 @@ div.CoinFlipperContainer div.Wrapper button {
   box-shadow: 0 0 2px white;
   background-color: black;
   transition: 0.5s;
-}
-
-div.CoinFlipperContainer div.Wrapper button:hover {
-  transform: scale(1.05);
-}
-
-div.CoinFlipperContainer div.Wrapper button:active {
-  transform: scale(0.95);
 }

@@ -17,11 +17,15 @@ div.basicosContainer {
     border-radius: 6px;
     box-shadow: 0 0 10px black;
     transition: 0.5s;
+    transform: scale(1);
 
     &:hover {
       background-color: rgba(172, 172, 172, 0.5);
       transform: scale(1.1);
       z-index: 10;
+    }
+    &:active {
+      transform: scale(1);
     }
   }
 }
