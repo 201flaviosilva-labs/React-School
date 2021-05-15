@@ -7,6 +7,7 @@ export default function MagicWords() {
 	}
 	return (
 		<div style={styles} className="ContainerBasicCenter">
+			<h2>Magic Words</h2>
 			<input
 				type="text"
 				placeholder="Alguma Coisa"

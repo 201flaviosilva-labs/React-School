@@ -21,6 +21,7 @@ export default function Todo() {
 
 	return (
 		<div className="TodoContainerBasic ContainerBasicCenter">
+			<h2>To Do List</h2>
 
 			<div className="Input">
 				<input

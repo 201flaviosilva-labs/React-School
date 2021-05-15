@@ -23,7 +23,3 @@ div.basicosContainer > div:hover {
   transform: scale(1.1);
   z-index: 10;
 }
-
-div.basicosContainer > div:active {
-  transform: scale(1);
-}

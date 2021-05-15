@@ -4,6 +4,7 @@ import DateCalc from "./DateCalc";
 import Form from "./Form";
 import Height from "./Height";
 import MagicWords from "./MagicWords";
+import PasswordGenerator from "./PasswordGenerator";
 import Todo from "./Todo";
 
 // APIs
@@ -18,6 +19,7 @@ const Basicos = {
 	Form,
 	Height,
 	MagicWords,
+	PasswordGenerator,
 	Todo,
 
 	MoviesAPI,

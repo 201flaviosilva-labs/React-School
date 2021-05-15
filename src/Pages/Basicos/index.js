@@ -13,6 +13,7 @@ export default function Basicos() {
 			<B.Form />
 			<B.Height />
 			<B.MagicWords />
+			<B.PasswordGenerator />
 			<B.Todo />
 
 			<B.MoviesAPI />

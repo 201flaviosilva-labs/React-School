@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 
-import Counter2 from "../../Projects/Basicos/Counter2";
+import Counter from "../../Projects/Basicos/Counter";
 import TicTacToe from "../../Projects/Jogos/TicTacToe";
 
 import "./Style.min.css";
@@ -20,7 +20,7 @@ export default function Home() {
 					</div>
 
 					<div className="Projeto">
-						<Counter2 />
+						<Counter />
 					</div>
 				</div>
 
