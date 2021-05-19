@@ -5,6 +5,7 @@ import Form from "./Form";
 import Height from "./Height";
 import MagicWords from "./MagicWords";
 import MemeGenerator from "./MemeGenerator";
+import MultiLanguageApp from "./MultiLanguageApp";
 import PasswordGenerator from "./PasswordGenerator";
 import Todo from "./Todo";
 
@@ -21,6 +22,7 @@ const Basicos = {
 	Height,
 	MagicWords,
 	MemeGenerator,
+	MultiLanguageApp,
 	PasswordGenerator,
 	Todo,
 

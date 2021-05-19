@@ -14,6 +14,7 @@ export default function Basicos() {
 			<B.Height />
 			<B.MagicWords />
 			<B.MemeGenerator />
+			<B.MultiLanguageApp />
 			<B.PasswordGenerator />
 			<B.Todo />
 
