@@ -7,8 +7,6 @@ import Header from "./Components/Header";
 import Main from "./Components/Main";
 import Footer from "./Components/Footer";
 
-const a = "";
-
 export default function App() {
   return (
     <>
