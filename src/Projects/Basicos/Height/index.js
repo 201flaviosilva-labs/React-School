@@ -1,12 +1,24 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import Swal from "sweetalert2";
+import withReactContent from "sweetalert2-react-content";
 
 import "./style.min.css";
 
 export default function Height() {
 	const [n, setN] = useState("");
+	const swal = withReactContent(Swal);
+
+	function showHeight() {
+		swal.fire({
+			title: <p>{n && !isNaN(Number(n)) ? `Tua altura é: ${Number(n) / 100} metros.` : "Eror 404!!"}</p>,
+			icon: "success",
+			confirmButtonText: "Incrível",
+		});
+	}
+
 	return (
 		<div className="ContainerBasicCenter">
-			<h2>Height</h2>
+			<h1>Height</h1>
 			<div className="HeightContainer">
 				<label htmlFor={"getHeightInput"}>Escreve a tua altura
 					<input
@@ -16,7 +28,7 @@ export default function Height() {
 						value={n}
 						onChange={(e) => setN(e.target.value)} /> cm.
 				</label>
-				<button onClick={() => (n && !isNaN(Number(n))) ? alert(`Tua altura é: ${Number(n) / 100} metros.`) : alert("Eror 404!!")}> Calcular </button>
+				<button onClick={showHeight}>Calcular</button>
 			</div>
 		</div>
 	);

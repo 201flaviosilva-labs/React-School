@@ -8,6 +8,10 @@ div.HeightContainer {
   border-radius: 10px;
 }
 
+div.HeightContainer h1 {
+  text-align: center;
+}
+
 div.HeightContainer label {
   margin: 10px 0;
   font-size: 18px;
