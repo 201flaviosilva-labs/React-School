@@ -1,9 +1,10 @@
-import CoinFlipper from "./CoinFlipper/index";
+import CoinFlipper from "./CoinFlipper";
 import Counter from "./Counter";
 import DateCalc from "./DateCalc";
 import Form from "./Form";
 import Height from "./Height";
 import MagicWords from "./MagicWords";
+import MemeGenerator from "./MemeGenerator";
 import PasswordGenerator from "./PasswordGenerator";
 import Todo from "./Todo";
 
@@ -19,6 +20,7 @@ const Basicos = {
 	Form,
 	Height,
 	MagicWords,
+	MemeGenerator,
 	PasswordGenerator,
 	Todo,
 
