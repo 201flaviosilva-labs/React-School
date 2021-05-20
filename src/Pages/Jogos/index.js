@@ -16,7 +16,7 @@ export default function Jogos() {
 			<h2>Jogos</h2>
 
 			<div className="SelectGameBtns">
-				{/* <button onClick={() => setIsVisiblePhaser(true)}>Phaser</button> */}
+				<button onClick={() => setIsVisiblePhaser(true)}>Phaser</button>
 				<button onClick={() => setIsVisibleReact3D(true)}>React 3D</button>
 				<button onClick={() => setIsVisibleTicTacToe(true)}>Tic Tac Toe</button>
 			</div>

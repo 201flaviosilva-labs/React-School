@@ -1,9 +1,9 @@
-// import Phaser from "./Phaser/Phaser";
+import Phaser from "./Phaser/Game";
 import React3D from "./React3D/React3D";
 import TicTacToe from "./TicTacToe/index";
 
 const JOGOS = {
-	// Phaser,
+	Phaser,
 	React3D,
 	TicTacToe,
 };
