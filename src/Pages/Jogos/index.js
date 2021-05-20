@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 import Modal from "../../Components/Modal/Modal";
+// import GameComponent from "./GameComponent";
 
 import "./Style.min.css";
 
@@ -20,6 +21,12 @@ export default function Jogos() {
 				<button onClick={() => setIsVisibleReact3D(true)}>React 3D</button>
 				<button onClick={() => setIsVisibleTicTacToe(true)}>Tic Tac Toe</button>
 			</div>
+
+			{/* {Object.keys(JOGOS).map((k, index) => {
+				const Game = JOGOS[k];
+				return (<GameComponent key={index} label={k} game={<Game />} />)
+			}
+			)} */}
 
 			{isVisiblePhaser && <Modal setIsVisible={setIsVisiblePhaser}> <JOGOS.Phaser /> </Modal>}
 			{isVisibleReact3D && <Modal setIsVisible={setIsVisibleReact3D}> <JOGOS.React3D /> </Modal>}
