@@ -23,7 +23,7 @@ export default function NavBar() {
 					>Básicos</Link>
 				</li>
 
-				{/* <li>
+				<li>
 					<Link
 						to="/medios"
 						style={page === "Medios" ? { backgroundColor: "red" } : { backgroundColor: "white" }}
@@ -31,7 +31,7 @@ export default function NavBar() {
 					>Médios</Link>
 				</li>
 
-				<li>
+				{/* <li>
 					<Link
 						to="/avancado"
 						style={page === "Avancado" ? { backgroundColor: "red" } : { backgroundColor: "white" }}

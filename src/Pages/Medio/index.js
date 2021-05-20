@@ -1,13 +1,15 @@
 import React from 'react';
-import Carousel from 'react-elastic-carousel';
+import Carousel from "../../Components/Carousel/Carousel";
 
 import "./style.min.css";
-
 
 export default function Medios() {
 	return (
 		<div className="mediosContainer">
-			<Carousel className="carouselContainer">
+			<h2>Medios</h2>
+
+			<Carousel>
+				<p></p>
 			</Carousel>
 		</div>
 	)
