@@ -26,6 +26,7 @@
     "@react-three/fiber": "^6.0.17",
     "chart.js": "^3.2.1",
     "phaser": "^3.54.0",
+    "phaser3-rex-plugins": "^1.1.47",
     "react": "^17.0.2",
     "react-chartjs-2": "^3.0.3",
     "react-dom": "^17.0.2",
@@ -68,5 +69,8 @@
   },
   "bugs": {
     "url": "https://gitlab.com/201flaviosilva/ReactSchool/-/issues"
+  },
+  "devDependencies": {
+    "url-loader": "^4.1.1"
   }
 }
