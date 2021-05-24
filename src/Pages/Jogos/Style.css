@@ -5,15 +5,16 @@ div.jogosContainer {
   align-items: center;
 }
 
-div.jogosContainer div.SelectGameBtns {
+div.jogosContainer > div.SelectGameBtns {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
+  justify-content: center;
   gap: 10px;
   padding: 10px;
 }
 
-div.jogosContainer div.SelectGameBtns button {
+div.jogosContainer > div.SelectGameBtns > button {
   height: 50px;
   border: 1px solid black;
   border-radius: 4px;
@@ -26,11 +27,11 @@ div.jogosContainer div.SelectGameBtns button {
   transition: 0.5s;
 }
 
-div.jogosContainer div.SelectGameBtns button:hover {
+div.jogosContainer > div.SelectGameBtns > button:hover {
   transform: scale(1.05);
 }
 
-div.jogosContainer div.SelectGameBtns button:active {
+div.jogosContainer > div.SelectGameBtns > button:active {
   transform: scale(0.95);
   opacity: 0.9;
 }

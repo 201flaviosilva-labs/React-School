@@ -1,21 +1,12 @@
 import React from "react";
-
 import Game from "./Components/Game";
 
-import "./style.css";
+import "./style.min.css";
 
 export default function TicTacToe() {
     return (
-        <>
-            <div className="TicTacToeContainer">
-                <div>
-                    {/* <button>Computer</button>
-                    <button>Local</button>
-                    <button>Online</button>
-                    <button>Settings</button> */}
-                    <Game />
-                </div>
-            </div>
-        </>
+        <div className="TicTacToeContainer">
+            <Game />
+        </div>
     )
 }

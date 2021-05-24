@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
-import { calculateWinner } from '../helps';
+import React, { useState } from "react";
+import { calculateWinner } from "../helps";
 import Board from "./Board";
-import "./style.css";
 
 export default function Game() {
 	const [board, setBoard] = useState(Array(9).fill(null));
@@ -11,7 +10,7 @@ export default function Game() {
 	function handleClick(i) {
 		const boardCopy = [...board];
 		if (winner || boardCopy[i]) return;
-		boardCopy[i] = xIsNext ? 'X' : 'O';
+		boardCopy[i] = xIsNext ? "X" : "O";
 		setBoard(boardCopy);
 		setXisNext(!xIsNext);
 	}
@@ -23,9 +22,9 @@ export default function Game() {
 
 	return (
 		<div>
-			<h3 className="H3TTT">{winner ? `Winner is: ${!xIsNext ? 'X' : 'O'}` : `Should play: ${xIsNext ? 'X' : 'O'}`}</h3>
+			<h3 className="H3TTT">{winner ? `Vencedor é: ${!xIsNext ? "X" : "O"}` : `A Jogar: ${xIsNext ? "X" : "O"}`}</h3>
 			<Board squares={board} onClick={handleClick} />
-			<button onClick={resetBoard} className="resetTTT">ReStart</button>
+			<button onClick={resetBoard} className="resetTTT">Recomeçar</button>
 		</div>
 	)
 }

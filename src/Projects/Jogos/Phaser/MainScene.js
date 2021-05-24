@@ -11,11 +11,11 @@ export default class MainScene extends Phaser.Scene {
 		const { Bomb, Dude, Platform, Sky, Star } = ASSETS.PhaserGame;
 
 		this.load.image("ground", Platform);
-		// this.load.rexImageURI("sky", Sky);
 		this.load.rexImageURI("star", Star)
 		this.load.rexImageURI("bomb", Bomb);
 		this.load.rexImageURI("player", Dude);
 		this.load.rexImageURI("player2", Dude);
+		this.load.rexImageURI("sky", Sky);
 	}
 
 	create() {

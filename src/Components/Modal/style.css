@@ -4,8 +4,10 @@ div.ModalContainer {
   left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: 100;
   background-color: rgba(10, 75, 119, 0.9);
+  z-index: 1000;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 div.ModalContainer button.CloseIcon {

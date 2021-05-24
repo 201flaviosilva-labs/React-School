@@ -1,36 +1,22 @@
-import React, { useState } from "react";
+import React from "react";
+import JOGOS from "../../Projects/Jogos/Jogos";
 
-import Modal from "../../Components/Modal/Modal";
-// import GameComponent from "./GameComponent";
+import GameComponent from "./GameComponent";
 
 import "./Style.min.css";
 
-import JOGOS from "../../Projects/Jogos/Jogos";
-
 export default function Jogos() {
-	const [isVisiblePhaser, setIsVisiblePhaser] = useState(false);
-	const [isVisibleReact3D, setIsVisibleReact3D] = useState(false);
-	const [isVisibleTicTacToe, setIsVisibleTicTacToe] = useState(false);
-
 	return (
 		<div className="jogosContainer">
 			<h2>Jogos</h2>
 
 			<div className="SelectGameBtns">
-				<button onClick={() => setIsVisiblePhaser(true)}>Phaser</button>
-				<button onClick={() => setIsVisibleReact3D(true)}>React 3D</button>
-				<button onClick={() => setIsVisibleTicTacToe(true)}>Tic Tac Toe</button>
+				{Object.keys(JOGOS).map((k, index) => {
+					const Game = JOGOS[k];
+					return (<GameComponent key={index} label={k} game={<Game />} />)
+				}
+				)}
 			</div>
-
-			{/* {Object.keys(JOGOS).map((k, index) => {
-				const Game = JOGOS[k];
-				return (<GameComponent key={index} label={k} game={<Game />} />)
-			}
-			)} */}
-
-			{isVisiblePhaser && <Modal setIsVisible={setIsVisiblePhaser}> <JOGOS.Phaser /> </Modal>}
-			{isVisibleReact3D && <Modal setIsVisible={setIsVisibleReact3D}> <JOGOS.React3D /> </Modal>}
-			{isVisibleTicTacToe && <Modal setIsVisible={setIsVisibleTicTacToe}> <JOGOS.TicTacToe /> </Modal>}
 		</div>
 	)
 }
