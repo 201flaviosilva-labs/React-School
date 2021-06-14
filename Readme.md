@@ -10,6 +10,9 @@
 - [Code Away](https://www.codeaway.io/);
 - [Lista Apis](https://github.com/public-apis/public-apis);
 - [React-School](https://react-school.netlify.app/);
+- Awesome-React
+- - [Enaqx -> react-components](https://github.com/enaqx/awesome-react);
+- - [Brillout -> awesome-react-components](https://github.com/brillout/awesome-react-components);
 
 
 ----
