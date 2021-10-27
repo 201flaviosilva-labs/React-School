@@ -1,6 +1,6 @@
 # React School
 
-- [WebSite](https://react-school2.netlify.app/);
+- [WebSite](https://react-schoole.netlify.app/);
 - [Repositório](https://gitlab.com/201flaviosilva/ReactSchool);
 
 ## Ideias
