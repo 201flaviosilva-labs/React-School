@@ -5,7 +5,7 @@ import GameComponent from "./GameComponent";
 
 import "./Style.min.css";
 
-export default function Jogos() {
+export default function Games() {
 	return (
 		<div className="jogosContainer">
 			<h2>Jogos</h2>

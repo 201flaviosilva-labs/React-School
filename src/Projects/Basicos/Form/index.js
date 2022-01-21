@@ -20,7 +20,7 @@ export default function Form() {
 	}
 
 	return (
-		<div className="FormContainer">
+		<div className="BasicProjectContainer FormContainer">
 			<marquee direction="left" behavior="alternate"><h1>Eu sou um formulário 🥲</h1></marquee>
 
 			<form onSubmit={handleSubmit}>

@@ -8,7 +8,7 @@ export default function MultiLanguageApp() {
 	const [selectedLanguage, setSelectedLanguage] = useState("en");
 
 	return (
-		<div className="MultiLanguageAppContainer">
+		<div className="BasicProjectContainer MultiLanguageAppContainer">
 			<h1>Multi-Language App</h1>
 
 			<div>

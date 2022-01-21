@@ -13,7 +13,7 @@ export default function PokemonAPI() {
 	}, [findPoke]);
 
 	return (
-		<div className="PokemonAPIContainer">
+		<div className="BasicProjectContainer PokemonAPIContainer">
 			<input
 				placeholder="Poke nome"
 				value={findPoke}

@@ -43,7 +43,7 @@ export default function DateCalc() {
 	useEffect(() => setMonths(years * 12 + dateNow.getMonth() - dataChoice.getMonth()), [dataChoice, dateNow, years]);
 
 	return (
-		<div className="ContainerBasicCenter">
+		<div className="BasicProjectContainer ContainerBasicCenter">
 			<h2>Data</h2>
 			<div className="DateCalcContainer">
 				<input

@@ -7,7 +7,7 @@ export default function PageProvider({ children }) {
 
 	useEffect(() => {
 		console.log(page);
-	}, [page])
+	}, [page]);
 
 	return (
 		<PageContext.Provider value={{ page, setPage }}>

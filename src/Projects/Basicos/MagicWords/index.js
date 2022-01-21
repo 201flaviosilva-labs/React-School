@@ -1,31 +1,27 @@
-import React, { useState } from 'react';
+import { useState } from "react";
+
+import InputWord from "./InputWord";
+import Output from "./Output";
 
 export default function MagicWords() {
-	const [word, setWord] = useState("Alguma Coisa");
-	const styles = {
-		border: "1px solid black"
-	}
-	return (
-		<div style={styles} className="ContainerBasicCenter">
-			<h2>Magic Words</h2>
-			<input
-				type="text"
-				placeholder="Alguma Coisa"
-				title="Alguma Coisa"
-				value={word}
-				onChange={e => setWord(e.target.value)} />
+	const [text, setText] = useState("Alguma Coisa");
 
-			<p><span>Original</span>: <span>{word}</span></p>
-			<p><span>Yoda</span>: <span>{word.split(" ").reverse().join(" ")}</span></p>
-			<p><span>Inverso</span>: <span>{word.split("").reverse().join("")}</span></p>
-			<p><span>Pequeno</span>: <span>{word.toLowerCase()}</span></p>
-			<p><span>Grande</span>: <span>{word.toUpperCase()}</span></p>
-			<p><span>Espaços exagerados</span>: <span>{word.trim()}</span></p>
-			<p><span>Nada de espaços</span>: <span>{word.split("")}</span></p>
-			<p><span>Só números</span>: <span>{word.replace(/[^0-9]/g, '')}</span></p>
-			<p><span>Só letras</span>: <span>{word.replace(/[^a-zA-Z]/g, '')}</span></p>
-			<p><span>Num. Letras</span>: <span>{word.length}</span></p>
-			<p><span>Num. Palavras</span>: <span>{word.trim().split(/\s+/).length}</span></p>
+	return (
+		<div className="BasicProjectContainer ContainerBasicCenter">
+			<h2>Magic Words</h2>
+			<InputWord text={text} setText={setText} />
+
+			<Output label="Word" finalWord={text} />
+			<Output label="Yoda" finalWord={text.split(" ").reverse().join(" ")} />
+			<Output label="Inverso" finalWord={text.split("").reverse().join("")} />
+			<Output label="Pequeno" finalWord={text.toLowerCase()} />
+			<Output label="Grande" finalWord={text.toUpperCase()} />
+			<Output label="Espaços exagerados" finalWord={text.trim()} />
+			<Output label="Nada de espaços" finalWord={text.split("")} />
+			<Output label="Só números" finalWord={text.replace(/[^0-9]/g, "")} />
+			<Output label="Só letras" finalWord={text.replace(/[^a-zA-Z]/g, "")} />
+			<Output label="Num. Letras" finalWord={text.length} />
+			<Output label="Num. Palavras" finalWord={text.trim().split(/\s+/).length} />
 		</div>
 	)
 }

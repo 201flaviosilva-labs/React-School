@@ -24,7 +24,7 @@ export default function CoinFlipper() {
 	}
 
 	return (
-		<div className="CoinFlipperContainer">
+		<div className="BasicProjectContainer CoinFlipperContainer">
 			<div className="Wrapper">
 				<h2>Coin Flipper </h2>
 

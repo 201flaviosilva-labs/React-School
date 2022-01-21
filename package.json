@@ -1,6 +1,6 @@
 {
   "name": "react_school",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "Learn React and libs",
   "homepage": "https://react-school-beryl.vercel.app/",
   "author": {
@@ -14,7 +14,7 @@
   "scripts": {
     "clear": "rm -rf build && rm -rf out && rm -rf dist",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "CI= react-scripts build",
     "eject": "react-scripts eject",
     "analyze": "npm run build && source-map-explorer 'build/static/js/*.js'"
   },
@@ -24,6 +24,9 @@
     "@react-three/drei": "^4.3.3",
     "@react-three/fiber": "^6.0.17",
     "chart.js": "^3.2.1",
+    "cypress": "^9.3.1",
+    "impacto": "^0.6.1",
+    "jotai": "^1.5.3",
     "phaser": "^3.54.0",
     "phaser3-rex-plugins": "^1.1.47",
     "react": "^17.0.2",

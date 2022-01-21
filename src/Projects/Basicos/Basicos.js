@@ -1,3 +1,4 @@
+import AtomMagicWord from "./AtomMagicWord/AtomMagicWord";
 import CoinFlipper from "./CoinFlipper";
 import Counter from "./Counter";
 import DateCalc from "./DateCalc";
@@ -14,7 +15,8 @@ import MoviesAPI from "./MoviesAPI";
 import PokemonAPI from "./PokemonAPI";
 import WeatherAPI from "./WeatherAPI";
 
-const Basicos = {
+export const BasicObj = {
+	AtomMagicWord,
 	CoinFlipper,
 	Counter,
 	DateCalc,
@@ -31,4 +33,22 @@ const Basicos = {
 	WeatherAPI,
 };
 
-export default Basicos;
+const Basic = [
+	AtomMagicWord,
+	CoinFlipper,
+	Counter,
+	DateCalc,
+	Form,
+	Height,
+	MagicWords,
+	MemeGenerator,
+	MultiLanguageApp,
+	PasswordGenerator,
+	Todo,
+
+	MoviesAPI,
+	PokemonAPI,
+	WeatherAPI,
+];
+
+export default Basic;

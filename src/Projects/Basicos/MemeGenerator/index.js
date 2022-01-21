@@ -10,7 +10,7 @@ export default function MemeGenerator() {
 
 
 	return (
-		<div className="memeGeneratorContainer">
+		<div className="BasicProjectContainer memeGeneratorContainer">
 			<h1>Meme Generator</h1>
 
 			<div className="From">

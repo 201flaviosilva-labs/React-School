@@ -1,48 +1,50 @@
-import React, { useState } from 'react';
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 export default function NavBar() {
-	const [page, setPage] = useState("Home");
+	const [page, setPage] = useState(useLocation().pathname);
+	const backgroundColor = (condition) => condition ? { backgroundColor: "green" } : { backgroundColor: "white" };
+
 	return (
 		<nav>
 			<ul>
 				<li>
 					<Link
 						to="/"
-						style={page === "Home" ? { backgroundColor: "red" } : { backgroundColor: "white" }}
-						onClick={() => { setPage("Home") }}
+						style={backgroundColor(page === "/")}
+						onClick={() => { setPage("/") }}
 					>Home</Link>
 				</li>
 
 				<li>
 					<Link
-						to="/basicos"
-						style={page === "Basicos" ? { backgroundColor: "red" } : { backgroundColor: "white" }}
-						onClick={() => { setPage("Basicos") }}
-					>Básicos</Link>
+						to="/noob"
+						style={backgroundColor(page === "/noob")}
+						onClick={() => { setPage("/noob") }}
+					>Noob</Link>
 				</li>
 
 				<li>
 					<Link
-						to="/medios"
-						style={page === "Medios" ? { backgroundColor: "red" } : { backgroundColor: "white" }}
-						onClick={() => { setPage("Medios") }}
-					>Médios</Link>
+						to="/ninja"
+						style={backgroundColor(page === "/ninja")}
+						onClick={() => { setPage("/ninja") }}
+					>Ninja</Link>
 				</li>
 
 				{/* <li>
 					<Link
-						to="/avancado"
-						style={page === "Avancado" ? { backgroundColor: "red" } : { backgroundColor: "white" }}
-						onClick={() => { setPage("Avancado") }}
-					>Avancado</Link>
+						to="/mestre"
+						style={backgroundColor(page === "/master")}
+						onClick={() => { setPage("/master") }}
+					>Mestre</Link>
 				</li> */}
 
 				<li>
 					<Link
 						to="/jogos"
-						style={page === "Jogos" ? { backgroundColor: "red" } : { backgroundColor: "white" }}
-						onClick={() => { setPage("Jogos") }}
+						style={backgroundColor(page === "/jogos")}
+						onClick={() => { setPage("/jogos") }}
 					>Jogos</Link>
 				</li>
 

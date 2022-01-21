@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useEffect } from "react/cjs/react.production.min";
 
 import { randomNumber } from "../../../Utils";
 
@@ -18,7 +19,7 @@ export default function PasswordGenerator() {
 	}
 
 	return (
-		<div className="PasswordGeneratorContainer">
+		<div className="BasicProjectContainer PasswordGeneratorContainer">
 			<h2>Password Generator</h2>
 			<div className="Form">
 				<label htmlFor="charsNumber">

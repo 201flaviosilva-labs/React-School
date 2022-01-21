@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 
 import ListMovies from "./ListMovies";
 
-import "./Style.min.css";
-
 export default function Movies() {
 	const [moviesList, setMoviesList] = useState([]);
 	const [search, setSearch] = useState("Pirates");
@@ -15,7 +13,7 @@ export default function Movies() {
 	}, [search]);
 
 	return (
-		<div className="filmesContainer">
+		<div className="BasicProjectContainer filmesContainer">
 			<h1>Filmes</h1>
 
 			<label>

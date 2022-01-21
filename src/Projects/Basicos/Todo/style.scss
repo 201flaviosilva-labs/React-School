@@ -1,12 +1,9 @@
 div.TodoContainerBasic {
-  max-height: 500px;
-
   div.Input {
     display: flex;
   }
 
   ul {
-    overflow-y: auto;
     li {
       display: flex;
       align-items: center;

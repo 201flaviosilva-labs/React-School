@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 import Carousel from "../../Components/Carousel/Carousel";
 
 import "./style.min.css";
 
-export default function Medios() {
+export default function Ninja() {
 	return (
 		<div className="mediosContainer">
 			<h2>Medios</h2>

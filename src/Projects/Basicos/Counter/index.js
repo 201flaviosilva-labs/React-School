@@ -18,7 +18,7 @@ export default function Counter() {
 	}, [Num]);
 
 	return (
-		<div className="CounterContainer">
+		<div className="BasicProjectContainer CounterContainer">
 			<div className="container">
 				<div className="CounterHeader">
 					<h2>React Counter</h2>

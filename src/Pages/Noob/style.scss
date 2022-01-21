@@ -9,7 +9,7 @@ div.basicosContainer {
   gap: $space;
   padding: $space;
 
-  & > div {
+  & > div.BasicProjectContainer {
     width: 500px;
     height: 500px;
     padding: 4px;
@@ -17,11 +17,11 @@ div.basicosContainer {
     border-radius: 6px;
     box-shadow: 0 0 10px black;
     transition: 0.5s;
-    transform: scale(1);
+    overflow: auto;
 
     &:hover {
       background-color: rgba(172, 172, 172, 0.5);
-      transform: scale(1.1);
+      transform: scale(1.05);
       z-index: 10;
     }
   }

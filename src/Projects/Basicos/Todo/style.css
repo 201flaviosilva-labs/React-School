@@ -1,13 +1,5 @@
-div.TodoContainerBasic {
-  max-height: 500px;
-}
-
 div.TodoContainerBasic div.Input {
   display: flex;
-}
-
-div.TodoContainerBasic ul {
-  overflow-y: auto;
 }
 
 div.TodoContainerBasic ul li {

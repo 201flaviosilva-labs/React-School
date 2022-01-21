@@ -1,12 +1,11 @@
-/* eslint-disable react/jsx-no-target-blank */
-import React from 'react';
+import React from "react";
 
 import "./style.css";
 
 export default function Footer() {
 	return (
 		<footer>
-			<a href="https://gitlab.com/201flaviosilva/ReactSchool" target="_blank">GitLab</a>
+			<p><a href="https://gitlab.com/201flaviosilva/ReactSchool" rel="noreferrer" target="_blank">GitLab</a></p>
 		</footer>
 	)
 }

@@ -17,7 +17,7 @@ export default function Height() {
 	}
 
 	return (
-		<div className="ContainerBasicCenter">
+		<div className="BasicProjectContainer ContainerBasicCenter">
 			<h1>Height</h1>
 			<div className="HeightContainer">
 				<label htmlFor={"getHeightInput"}>Escreve a tua altura

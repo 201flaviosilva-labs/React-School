@@ -6,7 +6,7 @@ export default function Todo() {
 	const [list, setList] = useState(["0 - React"]);
 	const [name, setName] = useState("");
 
-	function organizar() {
+	function organize() {
 		const virtualList = list.map(item => item).sort();
 		setList(virtualList);
 	}
@@ -20,7 +20,7 @@ export default function Todo() {
 	}
 
 	return (
-		<div className="TodoContainerBasic ContainerBasicCenter">
+		<div className="BasicProjectContainer TodoContainerBasic ContainerBasicCenter">
 			<h2>To Do List</h2>
 
 			<div className="Input">
@@ -33,7 +33,7 @@ export default function Todo() {
 				<button
 					onClick={() => setList(list.concat(name))}>
 					Adicionar
-					</button>
+				</button>
 			</div>
 
 			<ul>
@@ -49,7 +49,7 @@ export default function Todo() {
 				<button onClick={removeRepeat}>Rem. Repetidos</button>
 				{/* <button onClick={() => setList(list.filter(i => i !== l))}>Rem. Primeiro</button> */}
 				{/* <button onClick={() => setList(list.filter(i => i !== l))}>Rem. Ultimo</button> */}
-				<button onClick={organizar}>Org. Alfabeticamente</button>
+				<button onClick={organize}>Org. Alfabeticamente</button>
 			</div>
 		</div>
 	)

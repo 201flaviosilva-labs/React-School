@@ -15,7 +15,7 @@ export default function Weather() {
 	}, [search]);
 
 	return (
-		<div className="WeatherContainer">
+		<div className="BasicProjectContainer WeatherContainer">
 
 			<label>
 				<span>Cidade:</span>
