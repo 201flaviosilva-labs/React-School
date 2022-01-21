@@ -1,5 +1,5 @@
 import React from "react";
-import JOGOS from "../../Projects/Jogos/Jogos";
+import GAMES from "../../Projects/Games/Games";
 
 import GameComponent from "./GameComponent";
 
@@ -11,8 +11,8 @@ export default function Games() {
 			<h2>Jogos</h2>
 
 			<div className="SelectGameBtns">
-				{Object.keys(JOGOS).map((k, index) => {
-					const Game = JOGOS[k];
+				{Object.keys(GAMES).map((k, index) => {
+					const Game = GAMES[k];
 					return (<GameComponent key={index} label={k} game={<Game />} />)
 				}
 				)}

@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 import { Link } from "react-router-dom";
 
-import Counter from "../../Projects/Basicos/Counter";
-import TicTacToe from "../../Projects/Jogos/TicTacToe";
+import Counter from "../../Projects/Noob/Counter";
+import TicTacToe from "../../Projects/Games/TicTacToe";
 
 import "./Style.min.css";
 
@@ -15,8 +15,8 @@ export default function Home() {
 			<div className="Main">
 				<div className="ExemploProjeto">
 					<div className="Header">
-						<h3>Básicos</h3>
-						<Link to="/basicos">Ir</Link>
+						<h3>Noob</h3>
+						<Link to="/noob">Ir</Link>
 					</div>
 
 					<div className="Projeto">

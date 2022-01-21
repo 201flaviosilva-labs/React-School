@@ -1,13 +1,13 @@
 import Phaser from "./Phaser/Game";
 import React3D from "./React3D/React3D";
 import SlotMachine from "./SlotMachine/SlotMachine";
-import TicTacToe from "./TicTacToe/";
+import TicTacToe from "./TicTacToe";
 
-const JOGOS = {
+const GAMES = {
 	Phaser,
 	React3D,
 	SlotMachine,
 	TicTacToe,
 };
 
-export default JOGOS;
+export default GAMES;

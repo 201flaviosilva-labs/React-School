@@ -15,25 +15,7 @@ import MoviesAPI from "./MoviesAPI";
 import PokemonAPI from "./PokemonAPI";
 import WeatherAPI from "./WeatherAPI";
 
-export const BasicObj = {
-	AtomMagicWord,
-	CoinFlipper,
-	Counter,
-	DateCalc,
-	Form,
-	Height,
-	MagicWords,
-	MemeGenerator,
-	MultiLanguageApp,
-	PasswordGenerator,
-	Todo,
-
-	MoviesAPI,
-	PokemonAPI,
-	WeatherAPI,
-};
-
-const Basic = [
+const NOOB = [
 	AtomMagicWord,
 	CoinFlipper,
 	Counter,
@@ -51,4 +33,4 @@ const Basic = [
 	WeatherAPI,
 ];
 
-export default Basic;
+export default NOOB;
