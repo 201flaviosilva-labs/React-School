@@ -1,6 +1,6 @@
 # React School
 
-- [WebSite](https://react-school2.netlify.app/);
+- [WebSite](https://react-schoole.netlify.app/);
 - [Repositório](https://gitlab.com/201flaviosilva/ReactSchool);
 
 ## Ideias
@@ -10,6 +10,9 @@
 - [Code Away](https://www.codeaway.io/);
 - [Lista Apis](https://github.com/public-apis/public-apis);
 - [React-School](https://react-school.netlify.app/);
+- Awesome-React
+- - [Enaqx -> react-components](https://github.com/enaqx/awesome-react);
+- - [Brillout -> awesome-react-components](https://github.com/brillout/awesome-react-components);
 
 
 ----
