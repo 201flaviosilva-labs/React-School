@@ -1,23 +1,16 @@
-div.HeightContainer {
-  margin: 0 10px;
-  padding: 4px 10px;
+div.NoobHeight {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: red;
-  border-radius: 10px;
 }
 
-div.HeightContainer h1 {
+div.NoobHeight label {
+  margin: 10px 0;
+  font-size: 18px;
   text-align: center;
 }
 
-div.HeightContainer label {
-  margin: 10px 0;
-  font-size: 18px;
-}
-
-div.HeightContainer label input {
+div.NoobHeight label input {
   width: 100px;
   margin: 0 6px;
   padding: 4px;
@@ -25,7 +18,7 @@ div.HeightContainer label input {
   border-radius: 4px;
 }
 
-div.HeightContainer button {
+div.NoobHeight button {
   width: 50%;
   padding: 4px 10px;
   border: 1px solid black;
@@ -34,10 +27,14 @@ div.HeightContainer button {
   transition: 0.5s;
 }
 
-div.HeightContainer button:hover {
+div.NoobHeight button:hover {
   transform: scale(1.05);
+  background-color: #ff0000;
+  color: white;
+  border: 2px solid green;
 }
 
-div.HeightContainer button:active {
+div.NoobHeight button:active {
   transform: scale(0.95);
+  background-color: gray;
 }

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
+import NoobProject from "../../../Pages/Noob/components/Project";
 
 import "./style.min.css";
 
@@ -17,19 +18,16 @@ export default function Height() {
 	}
 
 	return (
-		<div className="BasicProjectContainer ContainerBasicCenter">
-			<h1>Height</h1>
-			<div className="HeightContainer">
-				<label htmlFor={"getHeightInput"}>Escreve a tua altura
-					<input
-						id="getHeightInput"
-						type="number"
-						name="heightInput"
-						value={n}
-						onChange={(e) => setN(e.target.value)} /> cm.
-				</label>
-				<button onClick={showHeight}>Calcular</button>
-			</div>
-		</div>
+		<NoobProject title="Altura" className="NoobHeight">
+			<label htmlFor={"getHeightInput"}>Escreve a tua altura
+				<input
+					id="getHeightInput"
+					type="number"
+					name="heightInput"
+					value={n}
+					onChange={(e) => setN(e.target.value)} /> cm.
+			</label>
+			<button onClick={showHeight}>Calcular</button>
+		</NoobProject>
 	);
 }

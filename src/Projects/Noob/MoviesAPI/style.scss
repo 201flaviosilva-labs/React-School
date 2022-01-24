@@ -1,0 +1,33 @@
+div.NoobMovies {
+  label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    input {
+      width: 100%;
+      padding: 4px 2px;
+      border: 1px solid black;
+      border-radius: 4px;
+      box-shadow: 0 0 5px black;
+    }
+  }
+  ul {
+    li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      padding: 4px;
+      background-color: rgba(236, 236, 236, 0.5);
+      border: 1px solid black;
+      border-radius: 4px;
+      transition: 1s;
+      &:hover {
+        transform: scale(1.05);
+      }
+
+      span:nth-child(2) {
+        font-weight: bold;
+      }
+    }
+  }
+}

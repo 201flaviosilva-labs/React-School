@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import NoobProject from "../../../Pages/Noob/components/Project";
 
 import Card from "./Card";
 
@@ -15,7 +16,7 @@ export default function Weather() {
 	}, [search]);
 
 	return (
-		<div className="BasicProjectContainer WeatherContainer">
+		<NoobProject className="NoobWeather">
 
 			<label>
 				<span>Cidade:</span>
@@ -27,6 +28,6 @@ export default function Weather() {
 			</label>
 
 			<Card result={result} />
-		</div>
+		</NoobProject>
 	)
 }

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useEffect } from "react/cjs/react.production.min";
+import NoobProject from "../../../Pages/Noob/components/Project";
 
 import { randomNumber } from "../../../Utils";
 
@@ -19,26 +19,16 @@ export default function PasswordGenerator() {
 	}
 
 	return (
-		<div className="BasicProjectContainer PasswordGeneratorContainer">
-			<h2>Password Generator</h2>
+		<NoobProject title="Password Generator" className="NoobPasswordGenerator">
 			<div className="Form">
 				<label htmlFor="charsNumber">
-					<span>Num. Caracteres ({charsNumber}): </span>
+					<span>Num. ({charsNumber}):</span>
 					<input
 						type="range"
 						value={charsNumber}
 						onChange={(e) => setCharsNumber(e.target.value)}
 						min={4}
-						max={100}
-					/>
-
-					<input
-						type="number"
-						value={charsNumber}
-						onChange={(e) => setCharsNumber((e.target.value >= 1 && e.target.value <= 100) ? e.target.value : charsNumber)}
-						min={4}
-						max={100}
-						id="charsNumber"
+						max={30}
 					/>
 				</label>
 
@@ -46,6 +36,6 @@ export default function PasswordGenerator() {
 			</div>
 
 			<p>{word}</p>
-		</div>
+		</NoobProject>
 	)
 }

@@ -2,19 +2,16 @@ import React from "react";
 import { BiBitcoin, BiCoin } from "react-icons/bi";
 import { FaCrown } from "react-icons/fa";
 
-export default function Coin({ CoinSelected }) {
+export default function Coin({ coinSelected }) {
 	return (
 		<>
-			<CoinImg CoinSelected={CoinSelected} />
-			<p>{CoinSelected ? CoinSelected : "Make Your Bet"}</p>
+			<CoinImg coinSelected={coinSelected} />
+			<p>{coinSelected ? coinSelected : "Make Your Bet"}</p>
 		</>
 	)
 }
 
-function CoinImg({ CoinSelected }) {
-	return CoinSelected ?
-		(CoinSelected === "Face")
-			? <BiBitcoin />
-			: <FaCrown />
-		: <BiCoin />;
+function CoinImg({ coinSelected }) {
+	const Icon = coinSelected ? coinSelected === "Face" ? BiBitcoin : FaCrown : BiCoin
+	return <Icon />;
 }

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import NoobProject from "../../../Pages/Noob/components/Project";
 
 import Coin from "./Components/Coin";
 import Graphic from "./Components/Graphic";
@@ -12,7 +13,7 @@ export default function CoinFlipper() {
 
 	const probability = ["Face", "Crown"];
 	const choice = probability[Math.round(Math.random())];
-	const [CoinSelected, setCoinSelected] = useState(null);
+	const [coinSelected, setCoinSelected] = useState(null);
 
 	function playClick() {
 		setNumPlays(numPlays + 1);
@@ -24,12 +25,10 @@ export default function CoinFlipper() {
 	}
 
 	return (
-		<div className="BasicProjectContainer CoinFlipperContainer">
+		<NoobProject title="Coin Flipper" className="NoobCoinFlipper">
 			<div className="Wrapper">
-				<h2>Coin Flipper </h2>
-
 				<div className="Coin">
-					<Coin CoinSelected={CoinSelected} />
+					<Coin coinSelected={coinSelected} />
 				</div>
 
 				<div className="Graphic" title={"Plays: " + numPlays}>
@@ -40,6 +39,6 @@ export default function CoinFlipper() {
 
 				<button onClick={playClick} className="ShootBTN">Shoot</button>
 			</div>
-		</div>
+		</NoobProject>
 	)
 }

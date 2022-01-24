@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import NoobProject from "../../../Pages/Noob/components/Project";
 
 import languages from "./languages";
 
@@ -8,31 +9,28 @@ export default function MultiLanguageApp() {
 	const [selectedLanguage, setSelectedLanguage] = useState("en");
 
 	return (
-		<div className="BasicProjectContainer MultiLanguageAppContainer">
-			<h1>Multi-Language App</h1>
+		<NoobProject title="Multi-Language App" className="NoobMultiLanguageApp">
 
-			<div>
-				<label htmlFor="selectedLanguage">
-					<span>Languages:</span>
-					<select value={selectedLanguage} onChange={e => setSelectedLanguage(e.target.value)} id="selectedLanguage">
-						{
-							Object.keys(languages).map((l, index) => <option key={index} value={l}>{l}</option>)
-						}
-					</select>
-				</label>
-
-				<div className="sentences">
+			<label htmlFor="SelectedLanguage">
+				<span>Languages:</span>
+				<select value={selectedLanguage} onChange={e => setSelectedLanguage(e.target.value)} id="SelectedLanguage">
 					{
-						Object.keys(languages[selectedLanguage]).map((key, index) =>
-							<p key={index}>
-								<span>{key} ➜ </span>
-								<span>{languages[selectedLanguage][key]}</span>
-							</p>
-						)
+						Object.keys(languages).map((l, index) => <option key={index} value={l}>{l}</option>)
 					}
-				</div>
+				</select>
+			</label>
+
+			<div className="Sentences">
+				{
+					Object.keys(languages[selectedLanguage]).map((key, index) =>
+						<p key={index}>
+							<span>{key} ➜ </span>
+							<span>{languages[selectedLanguage][key]}</span>
+						</p>
+					)
+				}
 			</div>
 
-		</div>
+		</NoobProject>
 	)
 }

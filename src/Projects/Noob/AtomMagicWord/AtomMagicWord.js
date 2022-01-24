@@ -1,34 +1,36 @@
 import React from "react";
 import { Provider, atom, useAtom } from "jotai";
+import NoobProject from "../../../Pages/Noob/components/Project";
+
+import "./style.min.css";
 
 const textAtom = atom("hello");
 const textLenAtom = atom((get) => get(textAtom).length);
 const uppercaseAtom = atom((get) => get(textAtom).toUpperCase());
 
-const Input = () => {
+function Input() {
 	const [text, setText] = useAtom(textAtom);
 	return <input value={text} onChange={(e) => setText(e.target.value)} />;
 };
 
-const CharCount = () => {
+function CharCount() {
 	const [len] = useAtom(textLenAtom);
-	return <div>Length: {len}</div>;
+	return <div>Comprimento: {len}</div>;
 };
 
-const Uppercase = () => {
+function Uppercase() {
 	const [uppercase] = useAtom(uppercaseAtom);
-	return <div>Uppercase: {uppercase}</div>;
+	return <div>Maiúsculas: {uppercase}</div>;
 };
 
 export default function AtomMagicWord() {
 	return (
-		<div className="BasicProjectContainer">
+		<NoobProject title="Atom Magic Word" className="NoobAtomMagicWord">
 			<Provider>
-				<h2>AtomMagicWord</h2>
 				<Input />
 				<CharCount />
 				<Uppercase />
 			</Provider>
-		</div>
+		</NoobProject>
 	);
 }

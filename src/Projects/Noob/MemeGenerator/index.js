@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import NoobProject from "../../../Pages/Noob/components/Project";
+
 import "./style.min.css";
 
 export default function MemeGenerator() {
@@ -10,12 +12,10 @@ export default function MemeGenerator() {
 
 
 	return (
-		<div className="BasicProjectContainer memeGeneratorContainer">
-			<h1>Meme Generator</h1>
-
+		<NoobProject title="Meme Generator" className="NoobMemeGenerator">
 			<div className="From">
 				<label htmlFor="texto1">
-					<span>Texto:</span>
+					<span>Texto 1:</span>
 					<input
 						type="text"
 						placeholder="Texto 1"
@@ -25,7 +25,7 @@ export default function MemeGenerator() {
 				</label>
 
 				<label htmlFor="texto2">
-					<span>Texto:</span>
+					<span>Texto 2:</span>
 					<input
 						type="text"
 						placeholder="Texto 2"
@@ -34,8 +34,8 @@ export default function MemeGenerator() {
 						id="texto2" />
 				</label>
 
-				<label htmlFor="img-url">
-					<span>Imagem URL (Link):</span>
+				<label htmlFor="img-url" title="Image URL (Link)">
+					<span>Img URL:</span>
 					<input
 						type="url"
 						placeholder="Link da Imagem"
@@ -43,8 +43,6 @@ export default function MemeGenerator() {
 						onChange={e => setImageURL(e.target.value)}
 						id="img-url" />
 				</label>
-
-				{/* <button>Download</button> */}
 			</div>
 
 			<div className="Meme">
@@ -53,6 +51,6 @@ export default function MemeGenerator() {
 				<p>{text2}</p>
 			</div>
 
-		</div>
+		</NoobProject>
 	)
 }

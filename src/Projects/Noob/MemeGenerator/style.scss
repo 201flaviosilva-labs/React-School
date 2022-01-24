@@ -1,9 +1,10 @@
 $imageSize: 350px;
 
-div.memeGeneratorContainer {
+div.NoobMemeGenerator {
   display: flex;
   flex-direction: column;
   align-items: center;
+
   div {
     &.From {
       display: flex;
@@ -27,6 +28,7 @@ div.memeGeneratorContainer {
       position: relative;
       width: $imageSize;
       height: $imageSize;
+
       img {
         position: absolute;
         top: 0;
@@ -34,6 +36,7 @@ div.memeGeneratorContainer {
         width: $imageSize;
         height: $imageSize;
       }
+
       p {
         width: 100%;
         text-align: center;
@@ -41,9 +44,11 @@ div.memeGeneratorContainer {
         font-size: 30px;
         font-weight: bold;
         color: white;
+
         &:nth-child(1) {
           top: 0;
         }
+
         &:nth-child(2) {
           bottom: 0;
         }

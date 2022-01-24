@@ -1,13 +1,11 @@
-div.MultiLanguageAppContainer h1 {
-  margin: 10px 0 20px;
-  text-align: center;
-  background-color: royalblue;
-  border-bottom: 1px solid black;
-  border-radius: 8px;
+div.NoobMultiLanguageApp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-div.MultiLanguageAppContainer div label {
-  width: 50%;
+div.NoobMultiLanguageApp label {
+  width: 100%;
   padding: 4px 0;
   display: flex;
   align-items: center;
@@ -17,12 +15,12 @@ div.MultiLanguageAppContainer div label {
   box-shadow: 0 0 5px black;
 }
 
-div.MultiLanguageAppContainer div label span {
+div.NoobMultiLanguageApp label span {
   font-weight: bold;
   font-family: "Press Start 2P";
 }
 
-div.MultiLanguageAppContainer div div.sentences {
+div.NoobMultiLanguageApp div.Sentences {
   margin-top: 10px;
   padding: 10px 4px;
   box-shadow: 0 0 20px black;
@@ -30,7 +28,7 @@ div.MultiLanguageAppContainer div div.sentences {
   border-radius: 6px;
 }
 
-div.MultiLanguageAppContainer div div.sentences p span:nth-child(1) {
+div.NoobMultiLanguageApp div.Sentences p span:nth-child(1) {
   color: white;
   text-transform: capitalize;
   font-family: "Courier New", Courier, cursive monospace;

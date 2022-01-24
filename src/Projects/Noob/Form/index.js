@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/no-distracting-elements */
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import NoobProject from "../../../Pages/Noob/components/Project";
 
 import "./style.min.css";
 
@@ -20,8 +21,8 @@ export default function Form() {
 	}
 
 	return (
-		<div className="BasicProjectContainer FormContainer">
-			<marquee direction="left" behavior="alternate"><h1>Eu sou um formulário 🥲</h1></marquee>
+		<NoobProject title="" className="NoobForm">
+			<marquee direction="left" behavior="alternate"><h2>Eu sou um formulário 🥲</h2></marquee>
 
 			<form onSubmit={handleSubmit}>
 				<label>
@@ -99,11 +100,11 @@ export default function Form() {
 							onChange={() => setSex("Other")} />Outros</label>
 				</div>
 
-				<div>
+				<div className="NoobFormButtons">
 					<button type="reset">Recomeçar</button>
 					<button type="submit">Submeter</button>
 				</div>
 			</form>
-		</div>
+		</NoobProject>
 	)
 }

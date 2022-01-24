@@ -1,4 +1,4 @@
-div.CoinFlipperContainer {
+div.NoobCoinFlipper {
   width: 100%;
   height: 100%;
   display: flex;
@@ -6,7 +6,7 @@ div.CoinFlipperContainer {
   justify-content: center;
 }
 
-div.CoinFlipperContainer div.Wrapper {
+div.NoobCoinFlipper div.Wrapper {
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -17,11 +17,7 @@ div.CoinFlipperContainer div.Wrapper {
   box-shadow: 0 0 10px black;
 }
 
-div.CoinFlipperContainer div.Wrapper h2 {
-  font-family: "Press Start 2P";
-}
-
-div.CoinFlipperContainer div.Wrapper div.Coin {
+div.NoobCoinFlipper div.Wrapper div.Coin {
   margin-top: 10px;
   padding: 20px;
   display: flex;
@@ -33,12 +29,12 @@ div.CoinFlipperContainer div.Wrapper div.Coin {
   box-shadow: 0 0 10px black;
 }
 
-div.CoinFlipperContainer div.Wrapper div.Coin svg {
+div.NoobCoinFlipper div.Wrapper div.Coin svg {
   width: 100px;
   height: 100px;
 }
 
-div.CoinFlipperContainer div.Wrapper div.Coin p {
+div.NoobCoinFlipper div.Wrapper div.Coin p {
   text-align: center;
   font-family: "Press Start 2P";
   font-size: 20px;
@@ -46,7 +42,7 @@ div.CoinFlipperContainer div.Wrapper div.Coin p {
   text-shadow: 0 0 2px white;
 }
 
-div.CoinFlipperContainer div.Wrapper div.Graphic {
+div.NoobCoinFlipper div.Wrapper div.Graphic {
   max-width: 300px;
   max-height: 300px;
   margin: 20px 0;
@@ -55,7 +51,7 @@ div.CoinFlipperContainer div.Wrapper div.Graphic {
   box-shadow: 0 0 10px black;
 }
 
-div.CoinFlipperContainer div.Wrapper button {
+div.NoobCoinFlipper div.Wrapper button {
   width: 50%;
   padding: 10px 0;
   font-family: "Press Start 2P";
@@ -67,4 +63,12 @@ div.CoinFlipperContainer div.Wrapper button {
   box-shadow: 0 0 2px white;
   background-color: black;
   transition: 0.5s;
+}
+
+div.NoobCoinFlipper div.Wrapper button:hover {
+  transform: scale(1.05);
+}
+
+div.NoobCoinFlipper div.Wrapper button:active {
+  transform: scale(0.95);
 }

@@ -1,15 +1,16 @@
-.WeatherContainer label {
+div.NoobWeather label {
   display: flex;
   align-items: center;
 }
 
-.WeatherContainer label span {
+div.NoobWeather label span {
   font-weight: bold;
   font-size: 30px;
   text-shadow: 0 0 2px #011a22;
 }
 
-.WeatherContainer label input {
+div.NoobWeather label input {
+  width: 100%;
   border: 1px solid black;
   border-radius: 4px;
   padding: 6px 10px;
@@ -17,31 +18,28 @@
   box-shadow: 0 0 10px #1e1e00;
 }
 
-.WeatherContainer label input:focus, .WeatherContainer label input:hover {
+div.NoobWeather label input:focus, div.NoobWeather label input:hover {
   transform: scale(1.05);
 }
 
-.WeatherContainer .WeatherCardContainer {
+div.NoobWeather div.NoobWeatherCard {
   margin-top: 10px;
   padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 1px solid black;
   border-radius: 4px;
-  background-color: rgba(28, 143, 5, 0.452);
   box-shadow: 0 0 10px #264d1e;
 }
 
-.WeatherContainer .WeatherCardContainer h1 {
+div.NoobWeather div.NoobWeatherCard p {
+  margin-top: 10px;
   font-size: 50px;
-  border-bottom: 1px solid #770000;
-  border-radius: 10px;
 }
 
-.WeatherContainer .WeatherCardContainer img,
-.WeatherContainer .WeatherCardContainer svg {
+div.NoobWeather div.NoobWeatherCard img,
+div.NoobWeather div.NoobWeatherCard svg {
   width: 250px;
   height: 250px;
   margin-top: 10px;

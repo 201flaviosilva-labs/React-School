@@ -1,4 +1,4 @@
-div.basicosContainer {
+div.NoobContainer {
   width: 100vw;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, auto));
@@ -7,7 +7,9 @@ div.basicosContainer {
   padding: 10px;
 }
 
-div.basicosContainer > div.BasicProjectContainer {
+div.NoobContainer > div.NoobProject {
+  display: flex;
+  flex-direction: column;
   width: 500px;
   height: 500px;
   padding: 4px;
@@ -18,8 +20,23 @@ div.basicosContainer > div.BasicProjectContainer {
   overflow: auto;
 }
 
-div.basicosContainer > div.BasicProjectContainer:hover {
+div.NoobContainer > div.NoobProject:hover {
   background-color: rgba(172, 172, 172, 0.5);
   transform: scale(1.05);
   z-index: 10;
+}
+
+div.NoobContainer > div.NoobProject > div.NoobProjectHeader {
+  flex: 0 1 auto;
+  margin-bottom: 10px;
+}
+
+div.NoobContainer > div.NoobProject > div.NoobProjectHeader h2 {
+  text-align: center;
+  text-decoration: underline black;
+}
+
+div.NoobContainer > div.NoobProject > div.NoobProjectMain {
+  position: relative;
+  flex: 1 1 auto;
 }

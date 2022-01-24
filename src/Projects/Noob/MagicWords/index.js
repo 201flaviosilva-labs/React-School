@@ -1,14 +1,16 @@
 import { useState } from "react";
+import NoobProject from "../../../Pages/Noob/components/Project";
 
-import InputWord from "./InputWord";
-import Output from "./Output";
+import InputWord from "./components/InputWord";
+import Output from "./components/Output";
+
+import "./style/style.min.css";
 
 export default function MagicWords() {
 	const [text, setText] = useState("Alguma Coisa");
 
 	return (
-		<div className="BasicProjectContainer ContainerBasicCenter">
-			<h2>Magic Words</h2>
+		<NoobProject title="Magic Words" className="NoobMagicWords">
 			<InputWord text={text} setText={setText} />
 
 			<Output label="Word" finalWord={text} />
@@ -22,6 +24,6 @@ export default function MagicWords() {
 			<Output label="Só letras" finalWord={text.replace(/[^a-zA-Z]/g, "")} />
 			<Output label="Num. Letras" finalWord={text.length} />
 			<Output label="Num. Palavras" finalWord={text.trim().split(/\s+/).length} />
-		</div>
+		</NoobProject>
 	)
 }

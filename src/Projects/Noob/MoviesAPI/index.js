@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from "react";
+import NoobProject from "../../../Pages/Noob/components/Project";
+
+import "./style.min.css";
 
 import ListMovies from "./ListMovies";
 
@@ -13,19 +16,17 @@ export default function Movies() {
 	}, [search]);
 
 	return (
-		<div className="BasicProjectContainer filmesContainer">
-			<h1>Filmes</h1>
-
+		<NoobProject title="Filmes" className="NoobMovies">
 			<label>
-				<span>Filme:</span>
+				<span>Nome:</span>
 				<input
-					placeholder="Nome filme"
+					placeholder="Nome do Filme"
 					value={search}
 					onChange={(e) => setSearch(e.target.value)}
 				/>
 			</label>
 
 			<ListMovies moviesList={moviesList} />
-		</div>
+		</NoobProject>
 	)
 }

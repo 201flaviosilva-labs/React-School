@@ -1,14 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import NoobProject from "../../../Pages/Noob/components/Project";
 
 import "./style.min.css";
 
 export default function Todo() {
-	const [list, setList] = useState(["0 - React"]);
+	const [list, setList] = useState(["React"]);
 	const [name, setName] = useState("");
 
 	function organize() {
-		const virtualList = list.map(item => item).sort();
-		setList(virtualList);
+		const sortList = list.map(item => item).sort();
+		setList(sortList);
 	}
 
 	function removeRepeat() {
@@ -20,9 +21,7 @@ export default function Todo() {
 	}
 
 	return (
-		<div className="BasicProjectContainer TodoContainerBasic ContainerBasicCenter">
-			<h2>To Do List</h2>
-
+		<NoobProject title="To Do List" className="NoobTodoApp">
 			<div className="Input">
 				<input
 					type="text"
@@ -39,7 +38,7 @@ export default function Todo() {
 			<ul>
 				{list.map((l, index) =>
 					<li key={index}>
-						<p>{l}</p>
+						<span>{index + 1} - {l}</span>
 						<button onClick={() => setList(list.filter(i => i !== l))}>Remover</button>
 					</li>
 				)}
@@ -51,6 +50,6 @@ export default function Todo() {
 				{/* <button onClick={() => setList(list.filter(i => i !== l))}>Rem. Ultimo</button> */}
 				<button onClick={organize}>Org. Alfabeticamente</button>
 			</div>
-		</div>
+		</NoobProject>
 	)
 }

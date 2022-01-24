@@ -1,20 +1,14 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
+import NoobProject from "../../../Pages/Noob/components/Project";
+import Output from "./components/Output";
 
 import "./style.min.css";
 
 export default function DateCalc() {
 	const dateNow = new Date();
-	const getMonth = dateNow.getMonth() + 1 >= 10 ? dateNow.getMonth() + 1 : "0" + dateNow.getMonth() + 1;
-	const getDay = dateNow.getDate() >= 10 ? dateNow.getDate() : "0" + dateNow.getDate();
-	const getHora = dateNow.getHours() >= 10 ? dateNow.getHours() : "0" + dateNow.getHours();
-	const getMin = dateNow.getMinutes() >= 10 ? dateNow.getMinutes() : "0" + dateNow.getMinutes();
 
-	const weekDays = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"];
-
-	const [date, setDate] = useState(
-		`${dateNow.getFullYear()}-${getMonth}-${getDay}T${getHora}:${getMin}`
-	);
+	const [date, setDate] = useState(dateNow);
 
 	const [milliseconds, setMilliseconds] = useState();
 	const [seconds, setSeconds] = useState();
@@ -30,10 +24,12 @@ export default function DateCalc() {
 	useEffect(() => setDataChoice(new Date(date)), [date]);
 
 	useEffect(() => {
+		const weekDays = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"];
+
 		setMilliseconds(Math.floor(dateNow - dataChoice));
 		setYears(dateNow.getFullYear() - dataChoice.getFullYear());
 		setWeeksDay(weekDays[dataChoice.getDay()]);
-	}, [dataChoice, dateNow, weekDays]);
+	}, [dataChoice]);
 
 	useEffect(() => setSeconds(Math.floor(milliseconds / 1000)), [milliseconds]);
 	useEffect(() => setMinutes(Math.floor(seconds / 60)), [seconds]);
@@ -43,30 +39,26 @@ export default function DateCalc() {
 	useEffect(() => setMonths(years * 12 + dateNow.getMonth() - dataChoice.getMonth()), [dataChoice, dateNow, years]);
 
 	return (
-		<div className="BasicProjectContainer ContainerBasicCenter">
-			<h2>Data</h2>
-			<div className="DateCalcContainer">
-				<input
-					type="datetime-local"
-					placeholder="Date"
-					title="Date"
-					value={date}
-					onChange={e => setDate(e.target.value)}
-				/>
+		<NoobProject title="Calculador Data" className="NoobDateCalc">
+			<input
+				type="datetime-local"
+				placeholder="Date"
+				title="Date"
+				value={date}
+				onChange={e => setDate(e.target.value)}
+			/>
 
-				<div>
-					<p><span>Data</span>: <span>{date.replace("T", " ")}</span></p>
-					<p><span>Milissegundos</span>: <span>{milliseconds}</span></p>
-					<p><span>Segundos</span>: <span>{seconds}</span></p>
-					<p><span>Minutos</span>: <span>{minutes}</span></p>
-					<p><span>Horas</span>: <span>{hours}</span></p>
-					<p><span>Dias</span>: <span>{days}</span></p>
-					<p><span>Dia da Semana</span>: <span>{weeksDay}</span></p>
-					<p><span>Semanas</span>: <span>{weeks}</span></p>
-					<p><span>Meses</span>: <span>{months}</span></p>
-					<p><span>Anos</span>: <span>{years}</span></p>
-				</div>
+			<div className="NoobDateCalcOutput">
+				<Output label="Milissegundos" out={milliseconds} />
+				<Output label="Segundos" out={seconds} />
+				<Output label="Minutos" out={minutes} />
+				<Output label="Horas" out={hours} />
+				<Output label="Dias" out={days} />
+				<Output label="Semanas" out={weeks} />
+				<Output label="Semanas do dia" out={weeksDay} />
+				<Output label="Meses" out={months} />
+				<Output label="Anos" out={years} />
 			</div>
-		</div>
+		</NoobProject>
 	)
 }

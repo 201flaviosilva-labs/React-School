@@ -1,29 +1,29 @@
 import React, { useState, useEffect } from "react";
-import "./style.css";
+import NoobProject from "../../../Pages/Noob/components/Project";
+import "./style.min.css";
 
 export default function Counter() {
 	const [Num, setNum] = useState(0);
-	const [StyleBackGroun, setStyleBackGroun] = useState({
+	const [bgStyle, setBGStyle] = useState({
 		backgroundColor: "yellow",
 	});
 
 	useEffect(() => {
 		if (Num > 0) {
-			setStyleBackGroun({ backgroundColor: "green" });
+			setBGStyle({ backgroundColor: "green" });
 		} else if (Num < 0) {
-			setStyleBackGroun({ backgroundColor: "red" });
+			setBGStyle({ backgroundColor: "red" });
 		} else {
-			setStyleBackGroun({ backgroundColor: "yellow" });
+			setBGStyle({ backgroundColor: "yellow" });
 		}
 	}, [Num]);
 
 	return (
-		<div className="BasicProjectContainer CounterContainer">
-			<div className="container">
-				<div className="CounterHeader">
-					<h2>React Counter</h2>
-				</div>
-				<div style={StyleBackGroun} className="CounterMain">
+		<NoobProject className="NoobCounter">
+			<div className="Container">
+				<div className="CounterHeader"><h2>React Counter</h2></div>
+
+				<div style={bgStyle} className="CounterMain">
 					<button onClick={() => setNum(Num - 100)}>-100</button>
 					<button onClick={() => setNum(Num - 10)}>-10</button>
 					<button onClick={() => setNum(Num - 1)}>-1</button>
@@ -33,6 +33,6 @@ export default function Counter() {
 					<button onClick={() => setNum(Num + 100)}>+100</button>
 				</div>
 			</div>
-		</div>
+		</NoobProject>
 	);
 }
