@@ -11,10 +11,13 @@ export default function Card({ pokemon }) {
 			<p className="Type">Tipo: {pokemon?.types[0].type.name || "null"}</p>
 
 			<ul className="Abilities">
-				{pokemon.abilities.map((a, index) =>
-					<li key={index}>
-						<p>{index + 1} - {a.ability.name}</p>
-					</li>
+				{pokemon?.abilities[0] && pokemon.abilities.map((a, index) => {
+					return (
+						<li key={index}>
+							<p>{index + 1} - {a.ability.name}</p>
+						</li>
+					)
+				}
 				)}
 			</ul>
 		</div>

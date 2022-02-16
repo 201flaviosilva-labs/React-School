@@ -36,11 +36,14 @@ export default function Todo() {
 			</div>
 
 			<ul>
-				{list.map((l, index) =>
-					<li key={index}>
-						<span>{index + 1} - {l}</span>
-						<button onClick={() => setList(list.filter(i => i !== l))}>Remover</button>
-					</li>
+				{list?.map((l, index) => {
+					return (
+						<li key={index}>
+							<span>{index + 1} - {l}</span>
+							<button onClick={() => setList(list.filter(i => i !== l))}>Remover</button>
+						</li>
+					)
+				}
 				)}
 			</ul>
 

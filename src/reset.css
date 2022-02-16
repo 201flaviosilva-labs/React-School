@@ -21,7 +21,6 @@ div#root {
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
   gap: 10px;
-  padding: 10px;
   background-color: rgb(0, 153, 255);
   background: radial-gradient(
     circle,

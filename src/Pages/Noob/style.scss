@@ -9,6 +9,12 @@ div.NoobContainer {
   gap: $space;
   padding: $space;
 
+  @media only screen and (max-width: 600px) {
+    & {
+      grid-template-columns: auto;
+    }
+  }
+
   & > div.NoobProject {
     display: flex;
     flex-direction: column;
@@ -20,6 +26,12 @@ div.NoobContainer {
     box-shadow: 0 0 10px black;
     transition: 0.5s;
     overflow: auto;
+
+    @media only screen and (max-width: 600px) {
+      & {
+        width: 100%;
+      }
+    }
 
     &:hover {
       background-color: rgba(172, 172, 172, 0.5);

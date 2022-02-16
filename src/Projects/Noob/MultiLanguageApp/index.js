@@ -22,11 +22,14 @@ export default function MultiLanguageApp() {
 
 			<div className="Sentences">
 				{
-					Object.keys(languages[selectedLanguage]).map((key, index) =>
-						<p key={index}>
-							<span>{key} ➜ </span>
-							<span>{languages[selectedLanguage][key]}</span>
-						</p>
+					Object.keys(languages[selectedLanguage]).map((key, index) => {
+						return (
+							<p key={index}>
+								<span>{key} ➜ </span>
+								<span>{languages[selectedLanguage][key]}</span>
+							</p>
+						)
+					}
 					)
 				}
 			</div>

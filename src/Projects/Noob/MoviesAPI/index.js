@@ -7,12 +7,14 @@ import ListMovies from "./ListMovies";
 
 export default function Movies() {
 	const [moviesList, setMoviesList] = useState([]);
-	const [search, setSearch] = useState("Pirates");
+	const [search, setSearch] = useState("Mad Max");
 
 	useEffect(() => {
-		fetch(`https://itunes.apple.com/search?term=${search}&entity=movie`)
-			.then((response) => response.json())
-			.then((data) => data && setMoviesList(data.results));
+		if (search) {
+			fetch(`https://itunes.apple.com/search?term=${search}&entity=movie`)
+				.then((response) => response.json())
+				.then((data) => data && setMoviesList(data.results));
+		}
 	}, [search]);
 
 	return (

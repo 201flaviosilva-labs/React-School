@@ -6,6 +6,7 @@
 ## Ideias
 
 - [Boards](https://gitlab.com/201flaviosilva/ReactSchool/-/boards/2261662);
+- [Reactjs Examples](https://reactjsexample.com/);
 - [Apps](https://github.com/florinpop17/app-ideas);
 - [Code Away](https://www.codeaway.io/);
 - [Lista Apis](https://github.com/public-apis/public-apis);
@@ -25,3 +26,4 @@
 - Game Engine
   - [React Game Engine](https://github.com/bberak/react-game-engine);
   - [React Phaser Fiber](https://github.com/mattjennings/react-phaser-fiber);
+  - [React Pixi](https://reactpixi.org/);  

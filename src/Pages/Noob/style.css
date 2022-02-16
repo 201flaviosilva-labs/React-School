@@ -7,6 +7,12 @@ div.NoobContainer {
   padding: 10px;
 }
 
+@media only screen and (max-width: 600px) {
+  div.NoobContainer {
+    grid-template-columns: auto;
+  }
+}
+
 div.NoobContainer > div.NoobProject {
   display: flex;
   flex-direction: column;
@@ -18,6 +24,12 @@ div.NoobContainer > div.NoobProject {
   box-shadow: 0 0 10px black;
   transition: 0.5s;
   overflow: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  div.NoobContainer > div.NoobProject {
+    width: 100%;
+  }
 }
 
 div.NoobContainer > div.NoobProject:hover {

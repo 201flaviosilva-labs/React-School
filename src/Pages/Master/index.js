@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Master() {
 	return (
-		<div className="avancadoContainer">
+		<div className="MasterContainer">
 			<h1>Mestre</h1>
 		</div>
 	)

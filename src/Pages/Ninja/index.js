@@ -5,8 +5,8 @@ import "./style.min.css";
 
 export default function Ninja() {
 	return (
-		<div className="mediosContainer">
-			<h2>Medios</h2>
+		<div className="NinjaContainer">
+			<h2>Ninja</h2>
 
 			<Carousel>
 				<p></p>
