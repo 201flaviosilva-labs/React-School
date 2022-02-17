@@ -9,6 +9,7 @@ import MemeGenerator from "./MemeGenerator";
 import MultiLanguageApp from "./MultiLanguageApp";
 import PasswordGenerator from "./PasswordGenerator";
 import Todo from "./Todo";
+import UniversallyUniqueIdentifier from "./UniversallyUniqueIdentifier";
 
 // APIs
 import MoviesAPI from "./MoviesAPI";
@@ -27,6 +28,7 @@ const NOOB = [
 	MultiLanguageApp,
 	PasswordGenerator,
 	Todo,
+	UniversallyUniqueIdentifier,
 
 	MoviesAPI,
 	PokemonAPI,
