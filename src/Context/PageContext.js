@@ -5,10 +5,6 @@ const PageContext = createContext();
 export default function PageProvider({ children }) {
 	const [page, setPage] = useState("Home");
 
-	useEffect(() => {
-		console.log(page);
-	}, [page]);
-
 	return (
 		<PageContext.Provider value={{ page, setPage }}>
 			{children}

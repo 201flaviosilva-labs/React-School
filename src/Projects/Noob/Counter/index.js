@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import NoobProject from "../../../Pages/Noob/components/Project";
 import "./style.min.css";
 
+import Button from "./components/Button";
+
 export default function Counter() {
 	const [Num, setNum] = useState(0);
 	const [bgStyle, setBGStyle] = useState({
@@ -24,13 +26,31 @@ export default function Counter() {
 				<div className="CounterHeader"><h2>React Counter</h2></div>
 
 				<div style={bgStyle} className="CounterMain">
-					<button onClick={() => setNum(Num - 100)}>-100</button>
-					<button onClick={() => setNum(Num - 10)}>-10</button>
-					<button onClick={() => setNum(Num - 1)}>-1</button>
+					<Button
+						onClick={() => setNum(Num - 100)}
+						label={"-100"}
+					/>
+					<Button
+						onClick={() => setNum(Num - 10)}
+						label={"-10"}
+					/>
+					<Button
+						onClick={() => setNum(Num - 1)}
+						label={"-1"}
+					/>
 					<span>{Num}</span>
-					<button onClick={() => setNum(Num + 10)}>+10</button>
-					<button onClick={() => setNum(Num + 1)}>+1</button>
-					<button onClick={() => setNum(Num + 100)}>+100</button>
+					<Button
+						onClick={() => setNum(Num + 10)}
+						label={"+10"}
+					/>
+					<Button
+						onClick={() => setNum(Num + 1)}
+						label={"+1"}
+					/>
+					<Button
+						onClick={() => setNum(Num + 100)}
+						label={"+100"}
+					/>
 				</div>
 			</div>
 		</NoobProject>

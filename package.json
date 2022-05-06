@@ -15,6 +15,7 @@
     "clear": "rm -rf build && rm -rf out && rm -rf dist",
     "start": "react-scripts start",
     "build": "CI= react-scripts build",
+    "test": "react-scripts test --coverage",
     "eject": "react-scripts eject",
     "analyze": "npm run build && source-map-explorer 'build/static/js/*.js'"
   },
@@ -24,8 +25,6 @@
     "@react-three/drei": "^4.3.3",
     "@react-three/fiber": "^6.0.17",
     "chart.js": "^3.2.1",
-    "cypress": "^9.3.1",
-    "impacto": "^0.6.1",
     "jotai": "^1.5.3",
     "phaser": "^3.54.0",
     "phaser3-rex-plugins": "^1.1.47",
@@ -72,6 +71,14 @@
     "url": "https://gitlab.com/201flaviosilva/ReactSchool/-/issues"
   },
   "devDependencies": {
-    "source-map-explorer": "^2.5.2"
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^12.0.4",
+    "@testing-library/user-event": "^12.0.4",
+    "canvas": "^2.9.1",
+    "cypress": "^9.6.0",
+    "react-test-renderer": "^17.0.2",
+    "source-map-explorer": "^2.5.2",
+    "typescript": "^4.6.4",
+    "web-vitals": "^2.1.4"
   }
 }

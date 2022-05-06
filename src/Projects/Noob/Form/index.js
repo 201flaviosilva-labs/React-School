@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/no-distracting-elements */
 import React, { useState } from "react";
+import Swal from "sweetalert2";
 import NoobProject from "../../../Pages/Noob/components/Project";
 
 import "./style.min.css";
@@ -13,11 +14,17 @@ export default function Form() {
 
 	function handleSubmit(event) {
 		event.preventDefault();
-		console.log("Nome: ", name);
-		console.log("Height: ", height);
-		console.log("BirthDay: ", birthDay);
-		console.log("Country: ", country);
-		console.log("Sex: ", sex);
+		Swal.fire({
+			title: "Beep",
+			text: `
+			Nome: ${name};\n
+			Height: ${height};\n
+			BirthDay: ${birthDay};\n
+			Country: ${country};\n
+			Sex: ${sex}`,
+			icon: "success",
+			confirmButtonText: "Incrível",
+		});
 	}
 
 	return (
