@@ -2,7 +2,7 @@ import React from "react";
 import { Provider, atom, useAtom } from "jotai";
 import NoobProject from "../../../Pages/Noob/components/Project";
 
-import "./style.min.css";
+import "./style.css";
 
 const textAtom = atom("hello");
 const textLenAtom = atom((get) => get(textAtom).length);

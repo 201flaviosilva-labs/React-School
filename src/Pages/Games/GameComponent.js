@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Modal from "../../Components/Modal/Modal";
+import Modal from "../../Components/Modal";
 
 export default function GameComponent({ label, game }) {
 	const [isGameVisible, setIsGameVisible] = useState(false);

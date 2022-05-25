@@ -1,4 +1,4 @@
-import AtomMagicWord from "./AtomMagicWord/AtomMagicWord";
+import AtomMagicWord from "./AtomMagicWord";
 import CoinFlipper from "./CoinFlipper";
 import Counter from "./Counter";
 import DateCalc from "./DateCalc";
