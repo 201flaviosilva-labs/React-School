@@ -28,4 +28,4 @@ it("Render button correctly", () => {
 test("Matches snapshot", () => {
 	const tree = rendered.create(<Button />).toJSON();
 	expect(tree).toMatchSnapshot();
-})
+});

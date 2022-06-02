@@ -21,18 +21,22 @@ const dataDefault = {
 };
 
 const options = {
-	responsive: true,
-	animation: {
-		duration: 0
-	},
+	width: 200,
+	height: 300,
+	responsive: false,
 	scales: {
-		yAxes: [
-			{
-				ticks: {
-					beginAtZero: true,
-				},
-			},
-		],
+		y: {
+			stacked: true,
+			grid: {
+				display: true,
+				color: "rgba(255, 99, 132, 0.2)"
+			}
+		},
+		x: {
+			grid: {
+				display: true
+			}
+		}
 	},
 };
 

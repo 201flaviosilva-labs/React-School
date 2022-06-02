@@ -1,4 +1,5 @@
 import AtomMagicWord from "./AtomMagicWord";
+import ChangeColorButton from "./ChangeColorButton";
 import CoinFlipper from "./CoinFlipper";
 import Counter from "./Counter";
 import DateCalc from "./DateCalc";
@@ -18,6 +19,7 @@ import WeatherAPI from "./WeatherAPI";
 
 const NOOB = [
 	AtomMagicWord,
+	ChangeColorButton,
 	CoinFlipper,
 	Counter,
 	DateCalc,

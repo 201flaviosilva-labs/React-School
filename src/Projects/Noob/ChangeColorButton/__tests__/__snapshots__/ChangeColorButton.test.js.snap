@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ChangeColorButton /> Matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="NoobProject"
+    title="Change Color Button"
+  >
+    <div
+      class="NoobProjectHeader"
+    >
+      <h2>
+        Change Color Button
+      </h2>
+    </div>
+    <div
+      class="NoobProjectMain NoobChangeColorButton"
+    >
+      <button
+        style="background-color: rgb(255, 0, 0);"
+      >
+        Red
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
