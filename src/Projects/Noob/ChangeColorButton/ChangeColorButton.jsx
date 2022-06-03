@@ -2,12 +2,14 @@ import React, { useState } from "react";
 import NoobProject from "../../../Pages/Noob/components/Project";
 import { InputLabel, Checkbox } from "@mui/material";
 
+export function camelCaseToSpaces(str) { return str.replace(/\B([A-Z])\B/g, " $1"); }
+
 export default function ChangeColorButton() {
 	const [color, setColor] = useState("#ff0000");
-	const text = color === "#ff0000" ? "Red" : "Green";
+	const text = color === "#ff0000" ? "Red" : "Blue";
 
 	const handleClick = () => {
-		setColor(color === "#ff0000" ? "#00ff00" : "#ff0000");
+		setColor(color === "#ff0000" ? "#0000ff" : "#ff0000");
 	};
 
 	return (
@@ -18,8 +20,11 @@ export default function ChangeColorButton() {
 				{text}
 			</button>
 
-			<InputLabel>
+			<InputLabel
+				htmlFor="ChangeColorButton-checkbox"
+			>
 				<Checkbox
+					id="ChangeColorButton-checkbox"
 					checked={color !== "#ff0000"}
 					onChange={handleClick}
 				/> {text}

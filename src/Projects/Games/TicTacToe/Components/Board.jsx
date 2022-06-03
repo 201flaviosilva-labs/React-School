@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import Square from "./Square";
 
 export default function Board({ squares, onClick }) {

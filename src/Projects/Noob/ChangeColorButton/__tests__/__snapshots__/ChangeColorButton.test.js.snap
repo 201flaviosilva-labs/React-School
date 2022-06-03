@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<ChangeColorButton /> Matches snapshot 1`] = `
+exports[`Noob - <ChangeColorButton /> Matches snapshot 1`] = `
 <DocumentFragment>
   <div
     class="NoobProject"
@@ -23,6 +23,7 @@ exports[`<ChangeColorButton /> Matches snapshot 1`] = `
       </button>
       <label
         class="MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-root MuiFormLabel-colorPrimary css-9npbnl-MuiFormLabel-root-MuiInputLabel-root"
+        for="ChangeColorButton-checkbox"
       >
         <span
           class="MuiCheckbox-root MuiCheckbox-colorPrimary MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"
@@ -30,6 +31,7 @@ exports[`<ChangeColorButton /> Matches snapshot 1`] = `
           <input
             class="PrivateSwitchBase-input css-1m9pwf3"
             data-indeterminate="false"
+            id="ChangeColorButton-checkbox"
             type="checkbox"
           />
           <svg
