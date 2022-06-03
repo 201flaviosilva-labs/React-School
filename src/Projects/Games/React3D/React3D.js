@@ -7,7 +7,7 @@ import Box from "./Box";
 import BoxPhysics from "./BoxPhysics";
 import Plane from "./Plane";
 
-import "./style.min.css";
+import "./style.css";
 
 export default function React3D() {
 	const style = {

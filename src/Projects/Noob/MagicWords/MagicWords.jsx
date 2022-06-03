@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import NoobProject from "../../../Pages/Noob/components/Project";
 
 import InputWord from "./components/InputWord";

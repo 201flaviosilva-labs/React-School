@@ -1,3 +1,4 @@
+import React from "react";
 import { BiCloudLightRain } from "react-icons/bi";
 import { FaRegSun } from "react-icons/fa";
 import { FiCloudDrizzle } from "react-icons/fi";

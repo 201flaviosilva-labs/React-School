@@ -1,11 +1,11 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
 
-import PageProvider from "./Context/PageContext";
+import PageProvider from "../../Context/PageContext";
 
-import Header from "./Components/Header";
-import Main from "./Components/Main";
-import Footer from "./Components/Footer";
+import Header from "../Header";
+import Main from "../Main";
+import Footer from "../Footer";
 
 export default function App() {
   return (
