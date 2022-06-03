@@ -35,8 +35,39 @@ describe("<ChangeColorButton />", () => {
 		expect(button.textContent).toBe("Red");
 	});
 
+	test("checkbox has the correct initial (red) color and initial ('Red') text", () => {
+		render(<ChangeColorButton />);
+		const checkbox = screen.getByRole("checkbox");
+		expect(checkbox).not.toBeChecked();
+	});
+
+	test("checkbox turns green color and 'Green' text after click", () => {
+		render(<ChangeColorButton />);
+		const button = screen.getByRole("button", { name: "Red" });
+		const checkbox = screen.getByRole("checkbox");
+
+		fireEvent.click(checkbox);
+
+		expect(checkbox).toBeChecked();
+		expect(button).toHaveStyle({ backgroundColor: "#00ff00" });
+		expect(button).toHaveTextContent("Green");
+	});
+
+	test("checkbox returns to red after second click", () => {
+		render(<ChangeColorButton />);
+		const button = screen.getByRole("button", { name: "Red" });
+		const checkbox = screen.getByRole("checkbox");
+
+		fireEvent.click(checkbox);
+		fireEvent.click(checkbox);
+
+		expect(checkbox).not.toBeChecked();
+		expect(button).toHaveStyle({ backgroundColor: "#ff0000" });
+		expect(button).toHaveTextContent("Red");
+	});
+
 	test("Matches snapshot", () => {
 		const { asFragment } = render(<ChangeColorButton />);
 		expect(asFragment()).toMatchSnapshot();
-	})
+	});
 });
