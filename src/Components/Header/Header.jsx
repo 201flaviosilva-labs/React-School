@@ -9,5 +9,5 @@ export default function Header() {
 			<h1>React School</h1>
 			<NavBar />
 		</header>
-	)
+	);
 }

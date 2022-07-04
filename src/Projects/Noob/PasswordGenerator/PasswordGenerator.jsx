@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import NoobProject from "../../../Pages/Noob/components/Project";
 
-import { randomInt } from "@201flaviosilva/utils";
+import { randomInt } from "201flaviosilva-utils";
 
 export default function PasswordGenerator() {
 	const [word, setWord] = useState("Alguma Coisa");
@@ -37,5 +37,5 @@ export default function PasswordGenerator() {
 
 			<p>{word}</p>
 		</NoobProject>
-	)
+	);
 }

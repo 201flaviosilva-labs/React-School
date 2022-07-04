@@ -1,7 +1,7 @@
 import React from "react";
 import { useBox } from "@react-three/cannon";
 
-export default function BoxPhysics(props) {
+export default function BoxPhysics() {
 	const [ref, api] = useBox(() => ({ mass: 1, position: [0, 2, 0] }));
 	return (
 		<mesh

@@ -8,5 +8,5 @@ export default function GameComponent({ label, game }) {
 			<button onClick={() => setIsGameVisible(true)}>{label}</button>
 			{isGameVisible && <Modal setIsVisible={setIsGameVisible}> {game} </Modal>}
 		</>
-	)
+	);
 }

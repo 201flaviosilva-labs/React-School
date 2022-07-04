@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { v1 as uuidv1, v3 as uuidv3, v4 as uuidv4, v5 as uuidv5 } from 'uuid';
+import { v1 as uuidv1, v3 as uuidv3, v4 as uuidv4, v5 as uuidv5 } from "uuid";
 
 import NoobProject from "../../../Pages/Noob/components/Project";
 
@@ -63,5 +63,5 @@ export default function UniversallyUniqueIdentifier() {
 				<button onClick={generateUUID}>Generate</button>
 			</div>
 		</NoobProject>
-	)
+	);
 }

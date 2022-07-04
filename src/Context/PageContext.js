@@ -9,7 +9,7 @@ export default function PageProvider({ children }) {
 		<PageContext.Provider value={{ page, setPage }}>
 			{children}
 		</PageContext.Provider>
-	)
+	);
 }
 
 export function usePage() {

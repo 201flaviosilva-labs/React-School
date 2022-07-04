@@ -52,5 +52,5 @@ export default function React3D() {
 				<Stats />
 			</Canvas>
 		</div>
-	)
+	);
 }

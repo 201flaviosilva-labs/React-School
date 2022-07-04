@@ -13,10 +13,10 @@ export default function Games() {
 			<div className="SelectGameBtns">
 				{Object.keys(GAMES).map((k, index) => {
 					const Game = GAMES[k];
-					return (<GameComponent key={index} label={k} game={<Game />} />)
+					return (<GameComponent key={index} label={k} game={<Game />} />);
 				}
 				)}
 			</div>
 		</div>
-	)
+	);
 }

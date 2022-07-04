@@ -28,12 +28,12 @@ export default function MultiLanguageApp() {
 								<span>{key} ➜ </span>
 								<span>{languages[selectedLanguage][key]}</span>
 							</p>
-						)
+						);
 					}
 					)
 				}
 			</div>
 
 		</NoobProject>
-	)
+	);
 }

@@ -25,5 +25,5 @@ export default function MagicWords() {
 			<Output label="Num. Letras" finalWord={text.length} />
 			<Output label="Num. Palavras" finalWord={text.trim().split(/\s+/).length} />
 		</NoobProject>
-	)
+	);
 }

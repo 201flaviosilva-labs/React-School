@@ -13,9 +13,9 @@ export default function ListMovies({ moviesList }) {
 							<p><span style={{ color: "Red", marginLeft: "10px" }}>Genero: </span> <span>{m.primaryGenreName}</span></p>
 						</div>
 					</li>
-				)
+				);
 			}
 			)}
 		</ul>
-	)
+	);
 }

@@ -12,5 +12,5 @@ export default function Ninja() {
 				<p></p>
 			</Carousel>
 		</div>
-	)
+	);
 }

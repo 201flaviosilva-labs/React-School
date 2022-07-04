@@ -9,5 +9,5 @@ export default function Modal({ children, setIsVisible }) {
 			<button className="CloseIcon" onClick={() => setIsVisible(false)}><AiOutlineCloseCircle /></button>
 			{children}
 		</div>
-	)
+	);
 }

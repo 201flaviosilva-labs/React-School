@@ -25,5 +25,5 @@ export default function PokemonAPI() {
 			{pokemon && <Card pokemon={pokemon} />}
 
 		</NoobProject>
-	)
+	);
 }

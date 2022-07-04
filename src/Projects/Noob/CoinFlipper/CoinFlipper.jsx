@@ -40,5 +40,5 @@ export default function CoinFlipper() {
 				<button onClick={playClick} className="ShootBTN">Shoot</button>
 			</div>
 		</NoobProject>
-	)
+	);
 }

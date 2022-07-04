@@ -5,5 +5,5 @@ export default function Master() {
 		<div className="MasterContainer">
 			<h1>Mestre</h1>
 		</div>
-	)
+	);
 }

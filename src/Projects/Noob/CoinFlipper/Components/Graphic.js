@@ -1,5 +1,29 @@
 import React, { useState, useEffect } from "react";
+import {
+	Chart as ChartJS,
+	CategoryScale,
+	LinearScale,
+	BarElement,
+	Title,
+	Tooltip,
+	Legend,
+	PointElement,
+	LineElement,
+	Filler
+} from "chart.js";
 import { Bar } from "react-chartjs-2";
+
+ChartJS.register(
+	CategoryScale,
+	LinearScale,
+	BarElement,
+	Title,
+	Tooltip,
+	Legend,
+	PointElement,
+	LineElement,
+	Filler,
+);
 
 const dataDefault = {
 	labels: ["Face", "Crown"],
@@ -70,5 +94,5 @@ export default function Grafico({ numFace, numCrown }) {
 				options={options}
 				className="CanvasGraphic" />
 		</>
-	)
+	);
 }

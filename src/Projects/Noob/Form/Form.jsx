@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/no-distracting-elements */
 import React, { useState } from "react";
 import Swal from "sweetalert2";
 import NoobProject from "../../../Pages/Noob/components/Project";
@@ -113,5 +112,5 @@ export default function Form() {
 				</div>
 			</form>
 		</NoobProject>
-	)
+	);
 }

@@ -26,5 +26,5 @@ export default function Carousel({ children }) {
 				<TiArrowRightOutline />
 			</button>
 		</div>
-	)
+	);
 }

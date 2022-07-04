@@ -25,5 +25,5 @@ export default function Card({ result }) {
 
 			<p>{result}</p>
 		</div>
-	)
+	);
 }

@@ -7,5 +7,5 @@ export default function Footer() {
 		<footer>
 			<p><a href="https://gitlab.com/201flaviosilva/ReactSchool" rel="noreferrer" target="_blank">GitLab</a></p>
 		</footer>
-	)
+	);
 }

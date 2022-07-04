@@ -3,7 +3,8 @@ import App from "../App";
 
 describe("<App />", () => {
   test("Rendes App", () => {
-    render(<App />);
+    const { asFragment } = render(<App />);
     expect(screen.getByText("GitLab")).toBeInTheDocument();
+    expect(asFragment()).toMatchSnapshot();
   });
 });

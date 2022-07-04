@@ -6,5 +6,5 @@ export default function Loading() {
 		<div className="InitialLoader">
 			<FadeLoader color={"#ffffff"} loading={true} />
 		</div>
-	)
+	);
 }

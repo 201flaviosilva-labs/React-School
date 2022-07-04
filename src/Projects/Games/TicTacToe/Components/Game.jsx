@@ -26,5 +26,5 @@ export default function Game() {
 			<Board squares={board} onClick={handleClick} />
 			<button onClick={resetBoard} className="resetTTT">Recomeçar</button>
 		</div>
-	)
+	);
 }

@@ -8,10 +8,10 @@ export default function Coin({ coinSelected }) {
 			<CoinImg coinSelected={coinSelected} />
 			<p>{coinSelected ? coinSelected : "Make Your Bet"}</p>
 		</>
-	)
+	);
 }
 
 function CoinImg({ coinSelected }) {
-	const Icon = coinSelected ? coinSelected === "Face" ? BiBitcoin : FaCrown : BiCoin
+	const Icon = coinSelected ? coinSelected === "Face" ? BiBitcoin : FaCrown : BiCoin;
 	return <Icon />;
 }

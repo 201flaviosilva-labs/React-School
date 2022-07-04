@@ -42,7 +42,7 @@ export default function Todo() {
 							<span>{index + 1} - {l}</span>
 							<button onClick={() => setList(list.filter(i => i !== l))}>Remover</button>
 						</li>
-					)
+					);
 				}
 				)}
 			</ul>
@@ -54,5 +54,5 @@ export default function Todo() {
 				<button onClick={organize}>Org. Alfabeticamente</button>
 			</div>
 		</NoobProject>
-	)
+	);
 }

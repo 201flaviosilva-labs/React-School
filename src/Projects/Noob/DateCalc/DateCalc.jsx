@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from "react";
 import NoobProject from "../../../Pages/Noob/components/Project";
 import Output from "./components/Output";
@@ -60,5 +59,5 @@ export default function DateCalc() {
 				<Output label="Anos" out={years} />
 			</div>
 		</NoobProject>
-	)
+	);
 }

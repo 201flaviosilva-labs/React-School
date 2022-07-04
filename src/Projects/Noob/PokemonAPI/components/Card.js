@@ -16,7 +16,7 @@ export default function Card({ pokemon }) {
 						<li key={index}>
 							<p>{index + 1} - {a.ability.name}</p>
 						</li>
-					)
+					);
 				}
 				)}
 			</ul>
