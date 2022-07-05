@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import NoobProject from "../../../Pages/Noob/components/Project";
-
 import { randomInt } from "201flaviosilva-utils";
+
+import NoobProject from "../../../Pages/Noob/components/Project";
 
 export default function PasswordGenerator() {
 	const [word, setWord] = useState("Alguma Coisa");

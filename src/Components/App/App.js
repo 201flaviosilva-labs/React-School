@@ -5,7 +5,6 @@ import PageProvider from "../../Context/PageContext";
 
 import Header from "../Header";
 import Main from "../Main";
-import Footer from "../Footer";
 
 export default function App() {
   return (
@@ -14,7 +13,6 @@ export default function App() {
         <BrowserRouter>
           <Header />
           <Main />
-          <Footer />
         </BrowserRouter>
       </PageProvider>
     </>
