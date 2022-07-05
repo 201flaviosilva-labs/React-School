@@ -1,15 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
-
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  color: black;
   font-family: "Courier New", Courier, cursive, monospace;
 }
 
-html,
-body,
 div#root {
   width: 100vw;
   height: 100vh;
@@ -27,33 +19,4 @@ div#root {
     rgba(95, 155, 195, 1) 0%,
     rgba(0, 153, 255, 1) 100%
   );
-}
-
-ul li {
-  list-style: none;
-}
-
-button,
-input,
-textarea,
-a {
-  outline: none;
-}
-
-textarea {
-  overflow: auto;
-  vertical-align: top;
-  resize: vertical;
-}
-
-button,
-a,
-label,
-input,
-textarea {
-  cursor: pointer;
-}
-
-a {
-  text-decoration: none;
 }

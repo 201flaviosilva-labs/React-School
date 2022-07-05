@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import Counter from "../../Projects/Noob/Counter";
-import TicTacToe from "../../Projects/Games/TicTacToe";
+import Counter from "../Noob/projects/Counter";
+import TicTacToe from "../Games/Projects/TicTacToe";
 
 import "./Style.min.css";
 

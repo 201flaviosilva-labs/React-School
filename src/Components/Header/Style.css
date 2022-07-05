@@ -6,6 +6,12 @@ header {
   justify-content: center;
 }
 
+header a#header-gitlab-link {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+
 header nav {
   margin-top: 4px;
 }

@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import App from "./Components/App";
 import reportWebVitals from "./reportWebVitals";
 
+import "201flaviosilva-utils/build/reset.min.css";
 import "./reset.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

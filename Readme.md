@@ -14,12 +14,12 @@
 - Awesome-React
 - - [Enaqx -> react-components](https://github.com/enaqx/awesome-react);
 - - [Brillout -> awesome-react-components](https://github.com/brillout/awesome-react-components);
+- [Portuguese Utils](https://github.com/imhugofonseca/portuguese-utils);
 
 
 ----
 
 ## Project Ideas
-
 - Multiple Tabs
   - [React Router Dom Nesting](https://reactrouter.com/web/example/nesting);
   - [React Tabs](https://www.npmjs.com/package/react-tabs);
