@@ -1,9 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Matches snapshot 1`] = `
-<button
-  data-testid="counter-button"
->
-  <span />
-</button>
+exports[`Render without crashing 1`] = `
+<DocumentFragment>
+  <button
+    data-testid="counter-button"
+  >
+    <span />
+  </button>
+</DocumentFragment>
 `;
