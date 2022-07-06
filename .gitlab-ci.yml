@@ -1,0 +1,19 @@
+image: node:16
+
+pages:
+  stage: deploy
+  cache:
+    paths:
+      - node_modules/
+  script:
+    - echo "beep"
+    # - npm install
+    # - npm run build
+    # - rm -rf public
+    # - cp build/index.html build/404.html
+    # - mv build public
+  # artifacts:
+  #   paths:
+  #     - public
+  only:
+    - master
