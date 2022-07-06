@@ -8,7 +8,6 @@ import MultiLanguageApp from "./projects/MultiLanguageApp";
 import Todo from "./projects/Todo";
 
 // APIs
-import MoviesAPI from "./projects/MoviesAPI";
 import PokemonAPI from "./projects/PokemonAPI";
 import WeatherAPI from "./projects/WeatherAPI";
 
@@ -22,7 +21,6 @@ export const NOOB_LIST = [
 	MultiLanguageApp,
 	Todo,
 
-	MoviesAPI,
 	PokemonAPI,
 	WeatherAPI,
 ];
