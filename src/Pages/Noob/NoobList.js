@@ -6,7 +6,6 @@ import MagicWords from "./projects/MagicWords";
 import MemeGenerator from "./projects/MemeGenerator";
 import MultiLanguageApp from "./projects/MultiLanguageApp";
 import Todo from "./projects/Todo";
-import UniversallyUniqueIdentifier from "./projects/UniversallyUniqueIdentifier";
 
 // APIs
 import MoviesAPI from "./projects/MoviesAPI";
@@ -22,7 +21,6 @@ export const NOOB_LIST = [
 	MemeGenerator,
 	MultiLanguageApp,
 	Todo,
-	UniversallyUniqueIdentifier,
 
 	MoviesAPI,
 	PokemonAPI,
