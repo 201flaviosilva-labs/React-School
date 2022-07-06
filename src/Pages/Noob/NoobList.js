@@ -1,7 +1,6 @@
 import ChangeColorButton from "./projects/ChangeColorButton";
 import CoinFlipper from "./projects/CoinFlipper";
 import Counter from "./projects/Counter";
-import DateCalc from "./projects/DateCalc";
 import Form from "./projects/Form";
 import Height from "./projects/Height";
 import MagicWords from "./projects/MagicWords";
@@ -20,7 +19,6 @@ export const NOOB_LIST = [
 	ChangeColorButton,
 	CoinFlipper,
 	Counter,
-	DateCalc,
 	Form,
 	Height,
 	MagicWords,
