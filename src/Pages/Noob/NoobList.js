@@ -9,7 +9,6 @@ import Todo from "./projects/Todo";
 
 // APIs
 import PokemonAPI from "./projects/PokemonAPI";
-import WeatherAPI from "./projects/WeatherAPI";
 
 export const NOOB_LIST = [
 	ChangeColorButton,
@@ -22,5 +21,4 @@ export const NOOB_LIST = [
 	Todo,
 
 	PokemonAPI,
-	WeatherAPI,
 ];
