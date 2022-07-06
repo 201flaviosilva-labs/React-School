@@ -7,9 +7,6 @@ import MemeGenerator from "./projects/MemeGenerator";
 import MultiLanguageApp from "./projects/MultiLanguageApp";
 import Todo from "./projects/Todo";
 
-// APIs
-import PokemonAPI from "./projects/PokemonAPI";
-
 export const NOOB_LIST = [
 	ChangeColorButton,
 	CoinFlipper,
@@ -19,6 +16,4 @@ export const NOOB_LIST = [
 	MemeGenerator,
 	MultiLanguageApp,
 	Todo,
-
-	PokemonAPI,
 ];
