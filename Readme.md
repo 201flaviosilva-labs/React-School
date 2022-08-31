@@ -16,7 +16,6 @@
 - - [Brillout -> awesome-react-components](https://github.com/brillout/awesome-react-components);
 - [Portuguese Utils](https://github.com/imhugofonseca/portuguese-utils);
 
-
 ----
 
 ## Project Ideas
