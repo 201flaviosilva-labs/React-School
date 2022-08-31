@@ -8,14 +8,13 @@ export default class MainScene extends Phaser.Scene {
 	}
 
 	preload() {
-		const { Bomb, Dude, DudeSolo, Platform, Sky, Star } = ASSETS.PhaserGame;
+		const { Bomb, Dude, Platform, Sky, Star } = ASSETS.PhaserGame;
 
 		this.load.rexImageURI("ground", Platform);
 		this.load.rexImageURI("sky", Sky);
 		this.load.rexImageURI("star", Star);
 		this.load.rexImageURI("bomb", Bomb);
-		// this.load.rexImageURI("player", Dude, { frameWidth: 32, frameHeight: 48 });
-		this.load.rexImageURI("player", DudeSolo);
+		this.load.rexImageURI("player", Dude, { frameWidth: 32, frameHeight: 48 });
 	}
 
 	create() {
@@ -59,6 +58,24 @@ export default class MainScene extends Phaser.Scene {
 		// Player
 		this.player = this.physics.add.sprite(centerX, centerY, "player").setBounce(0.5).setCollideWorldBounds(true);
 
+		this.anims.create({
+			key: "left",
+			frames: this.anims.generateFrameNumbers("player", { start: 0, end: 3 }),
+			frameRate: 10,
+			repeat: -1
+		});
+		this.anims.create({
+			key: "turn",
+			frames: [{ key: "player", frame: 4 }],
+			frameRate: 20
+		});
+		this.anims.create({
+			key: "right",
+			frames: this.anims.generateFrameNumbers("player", { start: 5, end: 8 }),
+			frameRate: 10,
+			repeat: -1
+		});
+
 		// Collision
 		this.physics.add.collider(this.player, this.platforms); // Player - Platforms
 		this.physics.add.collider(this.stars, this.platforms); // Stars - Platforms
@@ -86,17 +103,24 @@ export default class MainScene extends Phaser.Scene {
 		}
 	}
 
-	hitBomb(player, bomb) {
+	hitBomb(player) {
 		this.physics.pause();
 		player.setTint(0xff0000);
 		this.gameOver = true;
-		console.log("Game Over", bomb);
+		console.log("Game Over");
 	}
 
 	update() {
-		if (this.cursors.left.isDown) this.player.setVelocityX(-100);
-		else if (this.cursors.right.isDown) this.player.setVelocityX(100);
-		else this.player.setVelocityX(0);
+		if (this.cursors.left.isDown) {
+			this.player.setVelocityX(-100);
+			this.player.anims.play("left", true);
+		} else if (this.cursors.right.isDown) {
+			this.player.setVelocityX(100);
+			this.player.anims.play("right", true);
+		} else {
+			this.player.setVelocityX(0);
+			this.player.anims.play("turn");
+		}
 
 		if (this.cursors.up.isDown && this.player.body.touching.down) this.player.setVelocityY(-350);
 	}

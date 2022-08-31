@@ -8,14 +8,12 @@ import Main from "../Main";
 
 export default function App() {
   return (
-    <>
-      <PageProvider>
-        <BrowserRouter>
-          <Header />
-          <Main />
-        </BrowserRouter>
-      </PageProvider>
-    </>
+    <PageProvider>
+      <BrowserRouter>
+        <Header />
+        <Main />
+      </BrowserRouter>
+    </PageProvider>
   );
 }
 

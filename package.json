@@ -31,7 +31,7 @@
     "201flaviosilva-utils": "^1.2.5",
     "chart.js": "^3.8.0",
     "phaser": "^3.55.2",
-    "phaser3-rex-plugins": "^1.1.71",
+    "phaser3-rex-plugins": "^1.1.73",
     "react": "^18.2.0",
     "react-chartjs-2": "^4.2.0",
     "react-dom": "^18.2.0",

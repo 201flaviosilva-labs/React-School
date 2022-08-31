@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { GiRock, GiPaper, GiScissors } from "react-icons/gi";
-import { randomInt, rockPaperScissor } from "201flaviosilva-utils";
+import { randomInt, Games } from "201flaviosilva-utils";
 
 export function useRockPaperScissor() {
 	const options = ["Rock", "Paper", "Scissors"];
@@ -59,7 +59,7 @@ export function useRockPaperScissor() {
 	}
 
 	useEffect(() => {
-		const res = rockPaperScissor(formateOption(playerChoice), formateOption(computerChoice));
+		const res = Games.rockPaperScissor(formateOption(playerChoice), formateOption(computerChoice));
 		formateResult(res);
 	}, [rounds]);
 

@@ -1,5 +1,7 @@
 import React from "react";
 
+import { NINJA_LIST } from "./NinjaList";
+
 import Carousel from "../../Components/Carousel";
 
 import "./style.min.css";
@@ -10,7 +12,7 @@ export default function Ninja() {
 			<h2>Ninja</h2>
 
 			<Carousel>
-				<p></p>
+				{NINJA_LIST.map((Project, index) => (<Project key={index} />))}
 			</Carousel>
 		</div>
 	);

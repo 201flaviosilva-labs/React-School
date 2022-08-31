@@ -11,7 +11,7 @@ import "./style.css";
 
 export default function React3D() {
 	const style = {
-		position: "fixed",
+		position: "relative",
 		top: "10px",
 		width: "100%",
 		textAlign: "center",
