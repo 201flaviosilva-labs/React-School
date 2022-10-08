@@ -4,7 +4,7 @@ import { FaGitlab } from "react-icons/fa";
 export default function RepoLink() {
 	return (
 		<a
-			href="https://gitlab.com/201flaviosilva/ReactSchool"
+			href="https://github.com/201flaviosilva/React-School"
 			rel="noreferrer"
 			target="_blank"
 			title="GitLab"
