@@ -15,9 +15,12 @@
     "clear": "rm -rf build && rm -rf out && rm -rf dist",
     "start": "react-scripts start",
     "build": "CI= react-scripts build",
-    "test": "react-scripts test --coverage --silent=false",
+    "test": "react-scripts test --watchAll=false",
+    "start:jest": "react-scripts test --watch --coverage --silent=false",
+    "start:jest:all": "react-scripts test --watchAll --coverage --silent=false",
     "eject": "react-scripts eject",
-    "analyze": "npm run build && source-map-explorer 'build/static/js/*.js'"
+    "analyze": "npm run build && source-map-explorer 'build/static/js/*.js'",
+    "lint": "eslint ./src/"
   },
   "dependencies": {
     "201flaviosilva-utils": "^1.2.5",
@@ -51,19 +54,29 @@
     "web-vitals": "^3.0.2"
   },
   "browserslist": {
-    "production": [">0.2%", "not dead", "not op_mini all"],
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
     ]
   },
-  "keywords": ["React", "School", "React-Router", "Three", "Games"],
+  "keywords": [
+    "React",
+    "School",
+    "React-Router",
+    "Three",
+    "Games"
+  ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/201flaviosilva/React-School"
+    "url": "git+https://gitlab.com/201flaviosilva/ReactSchool"
   },
   "bugs": {
-    "url": "https://github.com/201flaviosilva/React-School/-/issues"
+    "url": "https://gitlab.com/201flaviosilva/ReactSchool/-/issues"
   }
 }

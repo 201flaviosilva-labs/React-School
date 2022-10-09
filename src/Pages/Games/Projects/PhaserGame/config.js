@@ -1,5 +1,5 @@
 import Phaser from "phaser";
-import ImageURILoaderPlugin from "phaser3-rex-plugins/plugins/imageuriloader-plugin.js";
+import ImageURILoaderPlugin from "phaser3-rex-plugins/plugins/imageuriloader-plugin";
 import { getUrlParameter } from "201flaviosilva-utils";
 
 import MainScene from "./MainScene";
