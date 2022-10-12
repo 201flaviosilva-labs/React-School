@@ -2,7 +2,7 @@ import React from "react";
 
 import { NOOB_LIST } from "./NoobList";
 
-import "./style.min.css";
+import "./style.scss";
 
 export default function Noob() {
 	return (

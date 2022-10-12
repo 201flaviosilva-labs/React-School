@@ -4,7 +4,7 @@ import NoobProject from "../../components/NoobProject";
 import InputWord from "./components/InputWord";
 import Output from "./components/Output";
 
-import "./style/style.min.css";
+import "./style.scss";
 
 export default function MagicWords() {
 	const [text, setText] = useState("Alguma Coisa");

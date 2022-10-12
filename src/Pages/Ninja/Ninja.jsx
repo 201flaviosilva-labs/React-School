@@ -4,7 +4,7 @@ import { NINJA_LIST } from "./NinjaList";
 
 import Carousel from "../../Components/Carousel";
 
-import "./style.min.css";
+import "./style.scss";
 
 export default function Ninja() {
 	return (

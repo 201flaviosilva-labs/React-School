@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import NoobProject from "../../components/NoobProject";
 
-import "./style.min.css";
+import "./style.scss";
 
 export default function Todo() {
 	const [list, setList] = useState(["React"]);

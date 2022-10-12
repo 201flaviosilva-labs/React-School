@@ -3,7 +3,7 @@ import Phaser from "phaser";
 
 import { gameConfig } from "./config";
 
-import "./style.min.css";
+import "./style.scss";
 
 export default function PhaserGame() {
 	useEffect(() => {

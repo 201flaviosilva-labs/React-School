@@ -2,7 +2,7 @@ import React from "react";
 import NavBar from "./components/NavBar";
 import RepoLink from "./components/RepoLink";
 
-import "./Style.min.css";
+import "./Style.scss";
 
 export default function Header() {
 	return (

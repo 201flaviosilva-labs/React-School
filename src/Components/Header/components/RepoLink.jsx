@@ -1,16 +1,16 @@
 import React from "react";
-import { FaGitlab } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 export default function RepoLink() {
 	return (
 		<a
-			href="https://github.com/201flaviosilva/React-School"
+			href="https://github.com/201flaviosilva-labs/React-School"
 			rel="noreferrer"
 			target="_blank"
-			title="GitLab"
-			id="header-gitlab-link"
+			title="GitHub"
+			id="header-github-link"
 		>
-			<FaGitlab size={25} />
+			<FaGithub size={25} />
 		</a>
 	);
 }

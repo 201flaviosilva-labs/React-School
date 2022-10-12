@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { TiArrowLeftOutline, TiArrowRightOutline } from "react-icons/ti";
 
-import "./style.min.css";
+import "./style.scss";
 
 export default function Carousel({ children }) {
 	const [indexComp, setIndexComp] = useState(0);

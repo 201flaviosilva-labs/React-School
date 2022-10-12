@@ -4,7 +4,7 @@ import { GAMES_LIST } from "./GamesList";
 
 import GameModal from "./components/GameModal";
 
-import "./Style.min.css";
+import "./Style.scss";
 
 export default function Games() {
 	return (

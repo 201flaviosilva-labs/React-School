@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import NoobProject from "../../components/NoobProject";
 import Button from "./components/Button";
 
-import "./style.min.css";
+import "./style.scss";
 
 export default function Counter() {
 	const [Num, setNum] = useState(0);

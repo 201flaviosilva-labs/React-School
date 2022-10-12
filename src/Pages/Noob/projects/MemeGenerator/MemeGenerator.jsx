@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import NoobProject from "../../components/NoobProject";
 
-import "./style.min.css";
+import "./style.scss";
 
 export default function MemeGenerator() {
 	const defaultImage = "https://i.imgflip.com/26am.jpg"; // https://imgflip.com/api

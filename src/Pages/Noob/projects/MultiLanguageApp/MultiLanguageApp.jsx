@@ -3,7 +3,7 @@ import NoobProject from "../../components/NoobProject";
 
 import languages from "./languages";
 
-import "./style.min.css";
+import "./style.scss";
 
 export default function MultiLanguageApp() {
 	const [selectedLanguage, setSelectedLanguage] = useState("en");

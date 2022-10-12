@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Counter from "../Noob/projects/Counter";
 import TicTacToe from "../Games/Projects/TicTacToe";
 
-import "./Style.min.css";
+import "./Style.scss";
 
 export default function Home() {
 
