@@ -1,11 +1,11 @@
 # React School
 
 - [WebSite](https://react-schoole.netlify.app/);
-- [Repositório](https://github.com/201flaviosilva/React-School);
+- [Repositório](https://github.com/201flaviosilva-labs/React-School);
 
 ## Ideias
 
-- [Boards](https://github.com/201flaviosilva/React-School/-/boards/2261662);
+- [Boards](https://github.com/201flaviosilva-labs/React-School/-/boards/2261662);
 - [Reactjs Examples](https://reactjsexample.com/);
 - [Apps](https://github.com/florinpop17/app-ideas);
 - [Code Away](https://www.codeaway.io/);
