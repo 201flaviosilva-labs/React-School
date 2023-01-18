@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 
 import PageProvider from "../../Context/PageContext";
 
@@ -9,10 +9,10 @@ import Main from "../Main";
 export default function App() {
   return (
     <PageProvider>
-      <BrowserRouter>
+      <HashRouter>
         <Header />
         <Main />
-      </BrowserRouter>
+      </HashRouter>
     </PageProvider>
   );
 }
