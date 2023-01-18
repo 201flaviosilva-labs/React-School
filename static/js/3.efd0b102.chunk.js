@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_school=self.webpackChunkreact_school||[]).push([[3],{3:function(e,t,n){n.r(t),n.d(t,{default:function(){return u}});n(791);var c=n(689),r=n(910),a=n(184);function u(){return(0,a.jsx)(c.Z5,{children:r.Z.map((function(e,t){var n=e.path,r=e.Component,u=e.exact;return(0,a.jsx)(c.AW,{path:n,element:(0,a.jsx)(r,{}),exact:u},t)}))})}}}]);
+//# sourceMappingURL=3.efd0b102.chunk.js.map

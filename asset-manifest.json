@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d39306c9.css",
+    "main.js": "/static/js/main.60096b9c.js",
+    "static/js/3.efd0b102.chunk.js": "/static/js/3.efd0b102.chunk.js",
+    "static/js/496.c2feee85.chunk.js": "/static/js/496.c2feee85.chunk.js",
+    "static/media/Ion-Phaser-Logo.png": "/static/media/Ion-Phaser-Logo.b2030902b749a871d7b1.png",
+    "static/media/platform.png": "/static/media/platform.69db09bf9618dbe6c387.png",
+    "static/media/dudeSolo.png": "/static/media/dudeSolo.b9dbefe46f5cd4559126.png",
+    "static/media/React-Logo.svg": "/static/media/React-Logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.d39306c9.css.map": "/static/css/main.d39306c9.css.map",
+    "main.60096b9c.js.map": "/static/js/main.60096b9c.js.map",
+    "3.efd0b102.chunk.js.map": "/static/js/3.efd0b102.chunk.js.map",
+    "496.c2feee85.chunk.js.map": "/static/js/496.c2feee85.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d39306c9.css",
+    "static/js/main.60096b9c.js"
+  ]
+}
